@@ -1,6 +1,15 @@
 # Deviations from the pre-registration
 
-Every change to `PREREGISTRATION.md` made after analysis began, with its date and reason. An empty list means the plan was followed as written.
+Every change or addition to `PREREGISTRATION.md` made after work began, with its date and reason. Clarifications fill in details the plan left open; additions are extra analyses reported alongside, never instead of, the registered ones. All entries below were made before the corresponding results were computed.
 
-| Date | Section | Change | Reason |
-|---|---|---|---|
+| Date | Section | Type | Change | Reason |
+|---|---|---|---|---|
+| 2026-10-06 | Data | clarification | AMFI NAV history starts in April 2006, so the first monthly return is May 2006. | The March 2006 request returns no data. |
+| 2026-10-06 | Universe | clarification | Excluded as non-domestic or non-equity even when filed under an equity label: overseas and global funds, fund-of-funds and multi-manager products, commodity funds, hybrids (including equity savings), and index funds or ETFs filed under pre-2018 labels. | Old AMFI labels ("Growth") mix these with domestic equity funds; found while checking classifications, before any return statistic. |
+| 2026-10-06 | Universe | clarification | Growth options are identified after removing fund-name phrases ("Dividend Yield", "Dividend Opportunities", "Growth & Value"), so a "Dividend Yield Fund - Growth" plan counts as growth. Institutional plans and bonus options are excluded. | Otherwise growth plans of dividend-yield funds were misread as dividend options. |
+| 2026-10-06 | Data cleaning | clarification | A monthly NAV change above +100% or below -60% is treated as a data error and dropped; the count is reported in `results/tables/data_quality.csv`. | No equity fund's true monthly return is outside this band in the sample period; such values are recording errors. |
+| 2026-10-06 | RQ2 | clarification | False-discovery-rate p-values follow Barras, Scaillet and Wermers (2010) exactly: Newey-West t-statistics and a per-fund residual bootstrap (1,000 draws). The 36-month minimum stays primary; their 60-month minimum is reported as a check. | The plan named the method but not its p-value step. |
+| 2026-10-06 | RQ3 | clarification | The primary timing window starts in 2019-04, the first month of AMFI's consistent category layout. The 2018-04 to 2019-03 months use an older layout whose equity total is not comparable (equity AUM drops from Rs 8.05 to 7.04 lakh crore across the switch with a flat market). | "As far as the format allows" in the plan. |
+| 2026-10-06 | RQ3 | addition | Besides the registered permutation test (flows shuffled across all months), a second test shuffles flows only within each calendar year, and a regression asks whether flows follow past returns and precede future ones. | Equity flows rose strongly over 2019-2026 (SIP growth); shuffling across years mixes that trend with timing. The within-year test isolates month-to-month timing. |
+| 2026-10-06 | Exploratory | addition | Whether SEBI's 2017 categorisation made large-cap funds more index-like: difference-in-differences in tracking error against a Nifty 50 index fund, large-cap vs mid- and small-cap funds, before and after mid-2018. | Not pre-registered; reported as exploratory. |
+| 2026-10-06 | Rupee estimates | clarification | The regular-plan share of active equity AUM is taken from AMFI's FY2025 annual report: direct plans held 12% of SIP AUM in March 2020 and 21% in March 2025. Applying the SIP split to all active equity AUM is labelled an assumption, with a sensitivity range. | No public source splits all equity AUM by plan. |
