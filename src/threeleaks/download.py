@@ -140,6 +140,20 @@ def scheme_master() -> list:
     return [path]
 
 
+def distributor_commissions() -> list:
+    """AMFI's annual disclosure of commissions paid to each top distributor (FY 2024-25)."""
+    out = RAW / "amfi_commissions"
+    out.mkdir(parents=True, exist_ok=True)
+    path = out / "ACDVol-2024-2025.pdf"
+    if not (path.exists() and path.stat().st_size > 1000):
+        body = get("https://portal.amfiindia.com/spages/ACDVol-2024-2025.pdf")
+        if not body.startswith(b"%PDF"):
+            raise RuntimeError("commission disclosure is not a PDF")
+        path.write_bytes(body)
+        print("commissions", path.name, flush=True)
+    return [path]
+
+
 def manifest(paths: list) -> None:
     rows = []
     for p in sorted(paths):
@@ -158,7 +172,7 @@ def main() -> None:
     if "--nav-reverse" in sys.argv:
         nav_history(reverse=True)
         return
-    files = iima() + scheme_master() + monthly_reports() + nav_history()
+    files = iima() + scheme_master() + distributor_commissions() + monthly_reports() + nav_history()
     manifest(files)
 
 

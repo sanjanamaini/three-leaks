@@ -1,6 +1,7 @@
 """Paths, dates and fixed choices shared by every stage (see PREREGISTRATION.md)."""
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -23,6 +24,11 @@ TWIN_MIN_CORR = 0.98           # twin plans must have return correlation >= this
 NW_LAGS = 3                    # Newey-West lags for the HAC check
 N_BOOT = 2000                  # Fama-French (2010) bootstrap simulations
 N_PERM = 10000                 # timing-test permutations
+N_FUND_BOOT = 1000             # per-fund residual bootstrap draws (Barras et al. 2010)
+
+# Smoke-test mode for development only (THREELEAKS_FAST=1); published numbers never use it.
+if os.environ.get("THREELEAKS_FAST"):
+    N_BOOT, N_PERM, N_FUND_BOOT = 50, 200, 100
 SEED = 20261006                # every random draw uses this seed
 
 TER_EVENT = "2019-04-01"       # SEBI TER cut (primary natural experiment)

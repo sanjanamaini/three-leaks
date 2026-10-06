@@ -2,25 +2,34 @@
 PY := .venv/bin/python
 export PYTHONPATH := src
 
-.PHONY: all data panels analysis report clean-derived
+.PHONY: all data panels analysis report test clean-derived
 
 all: data panels analysis report
+
+test:
+	$(PY) -m unittest discover -s tests
 
 data:
 	$(PY) -m threeleaks.download
 
 panels:
 	$(PY) -m threeleaks.panels
+	$(PY) -m threeleaks.validate
 
 analysis:
 	$(PY) -m threeleaks.commission
 	$(PY) -m threeleaks.skill
+	$(PY) -m threeleaks.style
 	$(PY) -m threeleaks.timing
 	$(PY) -m threeleaks.selection
+	$(PY) -m threeleaks.closet
+	$(PY) -m threeleaks.external
 	$(PY) -m threeleaks.synthesis
+	$(PY) tool/build_scorecard.py
 
 report:
 	$(PY) -m threeleaks.numbers
+	$(PY) -m threeleaks.report_tables
 	cd report && pdflatex -interaction=nonstopmode -halt-on-error report.tex >/dev/null && pdflatex -interaction=nonstopmode -halt-on-error report.tex >/dev/null
 
 clean-derived:
