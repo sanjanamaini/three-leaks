@@ -1,0 +1,107 @@
+% The Three Leaks: report. Every number comes from numbers.tex, written by the pipeline (make report).
+\documentclass[11pt]{article}
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\input{glyphtounicode}
+\usepackage{XCharter}
+\usepackage[scaled=0.92]{sourcesans}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
+\definecolor{accent}{HTML}{1F3A5F}
+\titleformat{\section}{\sffamily\color{accent}\large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\sffamily\color{accent}\bfseries}{\thesubsection}{0.6em}{}
+\captionsetup{font=small,labelfont={bf,sf}}
+\setlist{itemsep=2pt,topsep=3pt}
+\graphicspath{{../results/figures/}}
+\input{numbers.tex}
+
+\title{\sffamily\color{accent}\textbf{The Three Leaks}\\[4pt]\large Where Indian equity mutual fund investors lose their returns, and whether it can be avoided}
+\author{Sanjana Maini}
+\date{October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% RESULT: abstract written after the full run.
+\end{abstract}
+
+\section{Introduction}
+An investor who buys an actively managed equity fund in India can trail a cheap index alternative in three separate places. The first is the \textbf{commission leak}: a regular plan carries a distributor commission that the direct plan of the same fund does not. The second is the \textbf{skill leak}: after fees, the manager may deliver less than the market, size, value and momentum factors would have paid anyway, and the funds that appear to beat them may simply have been lucky. The third is the \textbf{timing leak}: investors who add money after good months and withdraw after bad ones earn less than the funds they hold.
+
+Each leak has been studied somewhere. Bergstresser, Chalmers and Tufano (2009) show that broker-sold funds in the United States deliver lower returns than direct-sold ones. Fama and French (2010) and Barras, Scaillet and Wermers (2010) develop ways to separate skill from luck across thousands of funds. Dichev (2007) and Friesen and Sapp (2007) show that investors' money-weighted returns fall short of buy-and-hold returns. DeMiguel, Gil-Bazo, Nogales and Santos (2023) find that machine learning on fund characteristics selects US funds with positive alpha out of sample. In India the pieces have been studied separately, but not together, not with false-discovery-rate methods, and not with an out-of-sample test of fund selection.
+
+India also offers a design most markets do not. Since January 2013 every mutual fund has had to offer a direct plan alongside its regular plan. The two plans hold the same portfolio and have the same manager; only the expense ratio differs, and the difference is the distributor's commission. Their return gap is therefore a pure, month-by-month price of distribution for every fund in the market.
+
+This report measures all three leaks on one open, survivorship-free dataset, tests whether any of them could have been avoided in advance, and turns the results into a scorecard an investor or a platform can use. Everything was pre-registered before any return statistic was computed (Section~\ref{sec:data}), and every number in this report is written by the pipeline from public data.
+
+% RESULT: summary of findings paragraph.
+
+\section{Data and design}\label{sec:data}
+\paragraph{Funds.} Month-end net asset values (NAVs) of every scheme in the Association of Mutual Funds in India (AMFI) NAV history, alive or dead, from April 2006 to September 2026. The universe is open-ended, actively managed equity schemes, growth options only. Excluded: index funds and ETFs (used as benchmarks), fund-of-funds, hybrid, arbitrage, solution-oriented, overseas and commodity schemes, and dividend options. Dead and merged schemes stay in the sample for the months they existed, so the sample is free of survivorship bias. AMFI labels each scheme with its current category, so live funds carry SEBI's 2017 categories throughout; funds that closed earlier keep the older labels.
+
+\paragraph{Twin plans.} AMFI's scheme master groups all plans of a fund under one fund name. A twin pair is the direct-growth and regular-growth plan of the same open-ended fund, accepted only if their monthly returns correlate at 0.98 or more; the return gap itself is never used to accept or reject a pair.
+
+\paragraph{Factors and benchmarks.} Monthly market, size, value and momentum factors and the 91-day Treasury bill rate come from the survivorship-bias-adjusted release of the IIMA Indian Fama-French-Momentum data library (Agarwalla, Jacob and Varma 2013), available to December 2025. Investable benchmarks are the average returns of the index funds tracking the Nifty 50, Nifty Next 50, Nifty Midcap 150, Nifty Smallcap 250 and Nifty 500, taken from the same AMFI NAV history.
+
+\paragraph{Flows.} AMFI's monthly reports give each category's gross sales, redemptions, net flows and month-end assets under management (AUM). The timing analysis starts in April 2019, the first month of AMFI's consistent category layout.
+
+\paragraph{Pre-registration.} Hypotheses, tests and what counts as a null result were committed to the repository (\texttt{PREREGISTRATION.md}) before any return statistic was computed. Every later clarification or addition, with its date and reason, is in \texttt{DEVIATIONS.md}. Additions are reported alongside the registered analyses, never instead of them.
+
+% RESULT: data quality numbers (schemes, twins, validation against mfapi).
+
+\section{Leak 1: the commission}
+% RESULT
+
+\section{Leak 2: skill, luck and the benchmark}
+% RESULT
+
+\section{Leak 3: timing}
+% RESULT
+
+\section{Could the leaks have been avoided?}
+% RESULT
+
+\section{Exploratory: did SEBI's categorisation create closet index funds?}
+% RESULT
+
+\section{The three leaks together}
+% RESULT
+
+\section{Deployment}
+% RESULT
+
+\section{Limitations}
+% RESULT
+
+\section{Reproducibility}
+Every number in this report is written by the pipeline into \texttt{results/numbers.json} and \texttt{report/numbers.tex}; none is typed by hand. \texttt{make all} downloads the raw data from AMFI and IIMA, rebuilds every panel, reruns every analysis with fixed random seeds, and recompiles this report. Raw data is not redistributed; the download scripts fetch it from the publishers.
+
+\section*{References}
+\begin{small}
+\begin{itemize}[leftmargin=1em,label={}]
+\item Agarwalla, S. K., Jacob, J. and Varma, J. R. (2013). Four factor model in Indian equities market. IIMA Working Paper 2013-09-05.
+\item Amihud, Y. and Goyenko, R. (2013). Mutual fund's $R^2$ as predictor of performance. \textit{Review of Financial Studies} 26(3).
+\item Barras, L., Scaillet, O. and Wermers, R. (2010). False discoveries in mutual fund performance: measuring luck in estimated alphas. \textit{Journal of Finance} 65(1).
+\item Bergstresser, D., Chalmers, J. and Tufano, P. (2009). Assessing the costs and benefits of brokers in the mutual fund industry. \textit{Review of Financial Studies} 22(10).
+\item Berk, J. B. and van Binsbergen, J. H. (2015). Measuring skill in the mutual fund industry. \textit{Journal of Financial Economics} 118(1).
+\item Carhart, M. M. (1997). On persistence in mutual fund performance. \textit{Journal of Finance} 52(1).
+\item DeMiguel, V., Gil-Bazo, J., Nogales, F. J. and Santos, A. A. P. (2023). Machine learning and fund characteristics help to select mutual funds with positive alpha. \textit{Journal of Financial Economics} 150(3).
+\item Dichev, I. D. (2007). What are stock investors' actual historical returns? \textit{American Economic Review} 97(1).
+\item Fama, E. F. and French, K. R. (2010). Luck versus skill in the cross-section of mutual fund returns. \textit{Journal of Finance} 65(5).
+\item Friesen, G. C. and Sapp, T. R. A. (2007). Mutual fund flows and investor returns: an empirical examination of fund investor timing ability. \textit{Journal of Banking and Finance} 31(9).
+\item Kosowski, R., Timmermann, A., Wermers, R. and White, H. (2006). Can mutual fund ``stars'' really pick stocks? \textit{Journal of Finance} 61(6).
+\item Sharpe, W. F. (1992). Asset allocation: management style and performance measurement. \textit{Journal of Portfolio Management} 18(2).
+\item Storey, J. D. (2002). A direct approach to false discovery rates. \textit{Journal of the Royal Statistical Society, Series B} 64(3).
+\end{itemize}
+\end{small}
+\end{document}

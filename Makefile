@@ -22,6 +22,7 @@ analysis:
 	$(PY) -m threeleaks.style
 	$(PY) -m threeleaks.timing
 	$(PY) -m threeleaks.selection
+	$(PY) -m threeleaks.decay
 	$(PY) -m threeleaks.closet
 	$(PY) -m threeleaks.external
 	$(PY) -m threeleaks.synthesis

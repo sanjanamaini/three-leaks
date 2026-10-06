@@ -1,0 +1,22 @@
+{
+ "commission_pairs": 622,
+ "commission_share_positive": 1.0,
+ "commission_gap_mean": 0.011830990656934891,
+ "commission_gap_median": 0.0120323952473127,
+ "commission_gap_p25": 0.008996569980686486,
+ "commission_gap_p75": 0.014981227500753036,
+ "commission_wilcoxon_p": 1.53412904168973e-103,
+ "commission_ter_pairs": 266,
+ "commission_ter_before": 0.010699353176207122,
+ "commission_ter_after": 0.00962714737441478,
+ "commission_ter_change": -0.0010722058017923425,
+ "commission_ter_p": 1.1767059134158837e-06,
+ "commission_ter_p_wilcoxon": 1.614353188075421e-08,
+ "commission_ter_share_narrowed": 0.6691729323308271,
+ "commission_placebo_2016_change": 0.0005028725900589173,
+ "commission_placebo_2016_p": 0.017990996479430227,
+ "commission_placebo_2022_change": -9.274272248443023e-05,
+ "commission_placebo_2022_p": 0.3335885675442032,
+ "commission_upfront_change": -0.001225022697515971,
+ "commission_upfront_p": 7.5986163433104936e-06
+}

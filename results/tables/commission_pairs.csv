@@ -1,0 +1,623 @@
+fund_id,category,count,mean,gap_ann
+360 ONE Asset Management Limited | 360 ONE Flexicap Fund,Flexi Cap,38,0.0012936890856064477,0.01564539648504426
+360 ONE Asset Management Limited | 360 ONE Focused Fund,Focused,143,0.0009584493162830338,0.011567787104008076
+360 ONE Asset Management Limited | 360 ONE QUANT FUND,Sectoral/Thematic,58,0.0010553447921234859,0.012744667282520439
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Banking and Financial Services Fund,Sectoral/Thematic,153,0.0008227821935343618,0.009922289013692742
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Business Cycle Fund,Sectoral/Thematic,57,0.0010233488535392882,0.012355897327543941
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Conglomerate Fund,Sectoral/Thematic,21,0.0011430949174884332,0.013811650609655057
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Consumption Fund,Sectoral/Thematic,164,0.0008893839655154924,0.01072976301404549
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Digital India Fund,Sectoral/Thematic,164,0.0007917385339828412,0.009546138875939914
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Dividend Yield Fund,Dividend Yield,164,0.0006290280046830881,0.007576896561009461
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life ELSS Tax Saver Fund,ELSS,164,0.0007160362107406504,0.008629455451772738
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life ESG Integration Strategy Fund,Sectoral/Thematic,69,0.001129370119345007,0.013644692035747807
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Flexi Cap Fund,Flexi Cap,164,0.0007323451410407671,0.00882687077879063
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Focused Fund,Focused,164,0.0007906140709043731,0.009532516599536578
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Infrastructure Fund,Sectoral/Thematic,164,0.0006572051223838933,0.007917641518711882
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Large & Mid Cap Fund,Large & Mid Cap,164,0.0007040139162619448,0.0084839534636314
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Large Cap Fund,Large Cap,164,0.0006541493887119437,0.007880683061818328
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life MNC Fund,Sectoral/Thematic,164,0.0006996394013145469,0.008431015315572221
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Manufacturing Equity Fund,Sectoral/Thematic,139,0.0007671832453476121,0.009248706337374957
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Midcap Fund,Mid Cap,164,0.0007161912696264779,0.008631332217033494
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Multi-Cap Fund,Multi Cap,64,0.001096478262386634,0.013244683108554867
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life PSU Equity Fund,Sectoral/Thematic,80,0.0012610103158658497,0.015247194062141034
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Pharma and Healthcare Fund,Sectoral/Thematic,86,0.00125538168201068,0.015178622921203644
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Quant Fund,Sectoral/Thematic,26,0.0012137848575177156,0.014672010888353793
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Small Cap Fund,Small Cap,164,0.0008434991864539018,0.010173390859779863
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Special Opportunities Fund,Sectoral/Thematic,71,0.0011310428439232057,0.013665038820633857
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Transportation and Logistics Fund,Sectoral/Thematic,34,0.0011769687300129052,0.014223834366845933
+Aditya Birla Sun Life AMC Limited | Aditya Birla Sun Life Value Fund,Value,164,0.0007808020345673967,0.009413656760381528
+Aditya Birla Sun Life Mutual Fund | aditya birla sun life buy india,Pre-2018 equity,36,0.0004771321638663662,0.005742008461568027
+Aditya Birla Sun Life Mutual Fund | aditya birla sun life india opportunities,Pre-2018 equity,64,0.0005611664898530098,0.006756722221871625
+Aditya Birla Sun Life Mutual Fund | aditya birla sun life india reforms,Pre-2018 equity,63,0.0006104309237967936,0.0073520657805858924
+Aditya Birla Sun Life Mutual Fund | aditya birla sun life special situations,Pre-2018 equity,63,0.0005247390401817702,0.006316735436497689
+Aditya Birla Sun Life Mutual Fund | aditya birla sun life tax,ELSS,122,0.0007048036466781776,0.008493510674345117
+Aditya Birla Sun Life Mutual Fund | aditya birla sun life tax savings,ELSS,42,6.647014124057665e-05,0.0007979598956213696
+Axis Asset Management Co. Ltd. | Axis Business Cycles Fund,Sectoral/Thematic,43,0.0010799526593673384,0.013043769277812922
+Axis Asset Management Co. Ltd. | Axis Consumption Fund,Sectoral/Thematic,24,0.0011356483276505475,0.01372106138278073
+Axis Asset Management Co. Ltd. | Axis ELSS- Tax Saver Fund,ELSS,164,0.0007825531852541479,0.009434868608270586
+Axis Asset Management Co. Ltd. | Axis ESG Integration Strategy Fund,Sectoral/Thematic,79,0.0010176351601680475,0.012286488212906566
+Axis Asset Management Co. Ltd. | Axis Flexi Cap Fund,Flexi Cap,106,0.0010452977664430676,0.012622573782568702
+Axis Asset Management Co. Ltd. | Axis Focused Fund,Focused,164,0.0009340604164536476,0.011271778116958453
+Axis Asset Management Co. Ltd. | Axis India Manufacturing Fund,Sectoral/Thematic,33,0.0011634790564437707,0.014059669073002157
+Axis Asset Management Co. Ltd. | Axis Innovation Fund,Sectoral/Thematic,69,0.0010153480351496995,0.012258705885123122
+Axis Asset Management Co. Ltd. | Axis Large & Mid Cap Fund,Large & Mid Cap,95,0.0011552946963953176,0.013960080810171638
+Axis Asset Management Co. Ltd. | Axis Large Cap Fund,Large Cap,164,0.0009109851658996472,0.010991792687252255
+Axis Asset Management Co. Ltd. | Axis Midcap Fund,Mid Cap,164,0.0009853078746258513,0.011893870679125396
+Axis Asset Management Co. Ltd. | Axis Momentum Fund,Sectoral/Thematic,21,0.0012681734966554067,0.01533446660334703
+Axis Asset Management Co. Ltd. | Axis Multicap Fund,Multi Cap,57,0.0010565900811363167,0.01275980131328125
+Axis Asset Management Co. Ltd. | Axis Quant Fund,Sectoral/Thematic,62,0.001317327976869045,0.015933542124839217
+Axis Asset Management Co. Ltd. | Axis Services Opportunities Fund,Sectoral/Thematic,14,0.0011552042318286504,0.013958980081257177
+Axis Asset Management Co. Ltd. | Axis Small Cap Fund,Small Cap,153,0.001017048188566279,0.012279358036960675
+Axis Asset Management Co. Ltd. | Axis Value Fund,Value,60,0.001168761100098404,0.014123946799372566
+BNP Paribas Mutual Fund | bnp paribas focused 25 equity,Focused,52,0.0012032851412417617,0.014544173723316955
+BNP Paribas Mutual Fund | bnp paribas india consumption,Sectoral/Thematic,41,0.001270636803982808,0.015364480016914595
+BNP Paribas Mutual Fund | bnp paribas large cap,Large Cap,109,0.0009341227774382158,0.011272534884086527
+BNP Paribas Mutual Fund | bnp paribas long term equity,ELSS,109,0.0007233051107857164,0.008717438809300537
+BNP Paribas Mutual Fund | bnp paribas mid cap,Mid Cap,109,0.0011300758341866437,0.013653276201335496
+BNP Paribas Mutual Fund | bnp paribas multi cap,Multi Cap,109,0.001169454625184251,0.01413238667925909
+Bajaj Finserv Asset Management Limited | BAJAJ FINSERV LARGE CAP FUND,Large Cap,25,0.0012498497994886664,0.015111234971351362
+Bajaj Finserv Asset Management Limited | Bajaj Finserv Consumption Fund,Sectoral/Thematic,21,0.001357197573939014,0.016419716748776292
+Bajaj Finserv Asset Management Limited | Bajaj Finserv ELSS - Tax Saver Fund,ELSS,19,0.0014506200843015383,0.01755983348302026
+Bajaj Finserv Asset Management Limited | Bajaj Finserv Flexi Cap Fund,Flexi Cap,37,0.0011471135520672911,0.013860541451159225
+Bajaj Finserv Asset Management Limited | Bajaj Finserv Healthcare Fund,Sectoral/Thematic,21,0.0014039436000762382,0.016990039687553304
+Bajaj Finserv Asset Management Limited | Bajaj Finserv Large & Mid Cap Fund,Large & Mid Cap,31,0.0012107705975154103,0.01463530972902416
+Bajaj Finserv Asset Management Limited | Bajaj Finserv Multi Cap Fund,Multi Cap,18,0.0012624390308007367,0.01526460019729603
+Bajaj Finserv Asset Management Limited | Bajaj Finserv Small Cap Fund,Small Cap,14,0.0012532815162349786,0.015153038722790502
+Bandhan AMC Limited | BANDHAN ELSS - Tax Saver Fund,ELSS,164,0.0009042393696798949,0.01090995666423189
+Bandhan AMC Limited | BANDHAN FINANCIAL SERVICES FUND,Sectoral/Thematic,38,0.001339810178488706,0.01620766417309416
+Bandhan AMC Limited | BANDHAN Flexi Cap Fund,Flexi Cap,164,0.0005930413450038713,0.007141878574309146
+Bandhan AMC Limited | BANDHAN INNOVATION FUND,Sectoral/Thematic,28,0.0012483499714484162,0.01509296522823056
+Bandhan AMC Limited | BANDHAN Infrastructure Fund,Sectoral/Thematic,164,0.0010375517219291279,0.012528452322662531
+Bandhan AMC Limited | BANDHAN LARGE CAP FUND,Large Cap,164,0.0009272412944568286,0.011189029675111817
+Bandhan AMC Limited | BANDHAN MID CAP FUND,Mid Cap,49,0.0012838822676995206,0.015525880524073887
+Bandhan AMC Limited | BANDHAN MULTI CAP FUND,Multi Cap,57,0.0012492842629830045,0.015104346005198943
+Bandhan AMC Limited | BANDHAN Small Cap Fund,Small Cap,79,0.0012862190969179443,0.015554358249953548
+Bandhan AMC Limited | BANDHAN TRANSPORTATION AND LOGISTICS FUND,Sectoral/Thematic,47,0.0013037071246307281,0.015767501126993544
+Bandhan AMC Limited | Bandhan Business Cycle Fund,Sectoral/Thematic,23,0.0012620040036067717,0.015259300198608106
+Bandhan AMC Limited | Bandhan Focused Fund,Focused,164,0.0010872841207935197,0.013132898294241135
+Bandhan AMC Limited | Bandhan Large & Mid Cap Fund,Large & Mid Cap,164,0.0010145459739287338,0.012248963210565789
+Bandhan AMC Limited | Bandhan Multi-Factor Fund,Sectoral/Thematic,13,0.0013073307644711361,0.015811671394357463
+Bandhan AMC Limited | Bandhan Value Fund,Value,164,0.0008400334008456929,0.01013137920060836
+Bank of India Investment Managers Private Limited | BANK OF INDIA ELSS TAX SAVER FUND,ELSS,164,0.0009879776526917153,0.011926289583161331
+Bank of India Investment Managers Private Limited | BANK OF INDIA FLEXI CAP FUND,Flexi Cap,74,0.0012762506903702682,0.015432884010954329
+Bank of India Investment Managers Private Limited | BANK OF INDIA LARGE & MID CAP FUND,Large & Mid Cap,164,0.0009462199205798964,0.011419347643235378
+Bank of India Investment Managers Private Limited | BANK OF INDIA LARGE CAP FUND,Large Cap,62,0.0010627056494824458,0.012834127261918127
+Bank of India Investment Managers Private Limited | BANK OF INDIA MANUFACTURING & INFRASTRUCTURE FUND,Sectoral/Thematic,164,0.0010670314871831937,0.012886704899187862
+Bank of India Investment Managers Private Limited | BANK OF INDIA MID CAP FUND,Mid Cap,13,0.0008962013246134759,0.010812452489288082
+Bank of India Investment Managers Private Limited | BANK OF INDIA MULTI CAP FUND,Multi Cap,42,0.0009392596696607962,0.011334874381686788
+Bank of India Investment Managers Private Limited | BANK OF INDIA SMALL CAP FUND,Small Cap,93,0.0013575929392323075,0.016424539045168718
+Bank of India Investment Managers Private Limited | Bank of India Business Cycle Fund,Sectoral/Thematic,24,0.0010432503420286883,0.012597694870034815
+Bank of India Investment Managers Private Limited | Bank of India Consumption Fund,Sectoral/Thematic,21,0.0010174452034458176,0.01228418072805737
+Baroda BNP Paribas Asset Management India Private Limited | BARODA BNP PARIBAS LARGE CAP FUND,Large Cap,54,0.0009963767442024772,0.012028285861231724
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Banking and Financial Services Fund,Sectoral/Thematic,164,0.0008040935937131538,0.009695826006182351
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Business Conglomerates Fund,Sectoral/Thematic,12,0.0013699916080284066,0.016575778030452293
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Business Cycle Fund,Sectoral/Thematic,60,0.00120971922582312,0.014622508703664439
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Dividend Yield Fund,Dividend Yield,24,0.0012393200644030592,0.014982976846026563
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas ELSS Tax Saver Fund,ELSS,54,0.0010050745330773014,0.012133920274240095
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Energy Opportunities Fund,Sectoral/Thematic,19,0.0011696425939289594,0.014134674184139273
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Flexi Cap Fund,Flexi Cap,49,0.0011296150521448516,0.013647671338115952
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Focused Fund,Focused,54,0.00149941961959716,0.01815588535242596
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Health and Wellness Fund,Sectoral/Thematic,14,0.0014262300071320978,0.017262056707579188
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas India Consumption Fund,Sectoral/Thematic,54,0.0012098797686977511,0.014624463390517706
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Innovation Fund,Sectoral/Thematic,30,0.0012052612123418704,0.014568231745615723
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Large and Mid Cap fund,Large & Mid Cap,72,0.0011928323507740396,0.014416923892160538
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Manufacturing Fund,Sectoral/Thematic,26,0.001123310715697076,0.013570989727197169
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Mid Cap Fund,Mid Cap,54,0.0012328628532068402,0.014904332379704677
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Multi Cap Fund,Multi Cap,164,0.0007502641304124913,0.009043819998724167
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Small Cap Fund,Small Cap,34,0.0011410448848882986,0.013786710753211695
+Baroda BNP Paribas Asset Management India Private Limited | Baroda BNP Paribas Value Fund,Value,39,0.0010507116905966517,0.012688363061342578
+Canara Robeco Asset Management Company Limited | Canara Robeco Consumption Fund,Sectoral/Thematic,164,0.000945654622894494,0.011412486630312246
+Canara Robeco Asset Management Company Limited | Canara Robeco ELSS - Tax Saver Fund,ELSS,164,0.0007623806086835795,0.009190543355322767
+Canara Robeco Asset Management Company Limited | Canara Robeco Flexi Cap Fund,Flexi Cap,164,0.0007806897394125758,0.00941229653414366
+Canara Robeco Asset Management Company Limited | Canara Robeco Focused Fund,Focused,64,0.0012763825136885556,0.015434490305012094
+Canara Robeco Asset Management Company Limited | Canara Robeco Infrastructure Fund,Sectoral/Thematic,164,0.0008094160416667913,0.009760316707445815
+Canara Robeco Asset Management Company Limited | Canara Robeco Large Cap Fund,Large Cap,164,0.0009752070397116812,0.011771226436870341
+Canara Robeco Asset Management Company Limited | Canara Robeco Large and Mid Cap Fund,Large & Mid Cap,164,0.0009008303470904927,0.010868602931555227
+Canara Robeco Asset Management Company Limited | Canara Robeco Manufacturing Fund,Sectoral/Thematic,30,0.001110994002634949,0.013421194440800255
+Canara Robeco Asset Management Company Limited | Canara Robeco Mid Cap Fund,Mid Cap,45,0.0011474253840904306,0.013864335308463316
+Canara Robeco Asset Management Company Limited | Canara Robeco Multi Cap Fund,Multi Cap,37,0.001168042854569408,0.014115206157152338
+Canara Robeco Asset Management Company Limited | Canara Robeco Small Cap Fund,Small Cap,91,0.001249323760980013,0.0151048271403742
+Canara Robeco Asset Management Company Limited | Canara Robeco Value Fund,Value,60,0.0013001786849063828,0.01572449314468627
+Canara Robeco Mutual Fund | canara robeco nifty index,Pre-2018 equity,15,5.214171081805201e-05,0.000625896321226671
+Capitalmind Asset Management Private Limited | Capitalmind Flexi Cap Fund,Flexi Cap,13,0.0011834819182156356,0.014303107433283113
+DSP Asset Managers Private Limited | DSP Banking & Financial Services Fund,Sectoral/Thematic,33,0.0012295123567151109,0.014863527999138926
+DSP Asset Managers Private Limited | DSP Business Cycle Fund,Sectoral/Thematic,21,0.0012497595916892193,0.01511013612053791
+DSP Asset Managers Private Limited | DSP ELSS Tax Saver Fund,ELSS,164,0.0007091186775371914,0.008545732193794287
+DSP Asset Managers Private Limited | DSP Flexi Cap Fund,Flexi Cap,164,0.0007195233134930212,0.008671662669454738
+DSP Asset Managers Private Limited | DSP Focused Fund,Focused,164,0.0007472065952018042,0.009006798433791374
+DSP Asset Managers Private Limited | DSP Healthcare Fund,Sectoral/Thematic,93,0.0012155865708685966,0.014693948902814391
+DSP Asset Managers Private Limited | DSP India T.I.G.E.R. Fund,Sectoral/Thematic,164,0.0005844298328661082,0.007037807777501959
+DSP Asset Managers Private Limited | DSP Large & Mid Cap Fund,Large & Mid Cap,164,0.0007492667652454194,0.009031743449095186
+DSP Asset Managers Private Limited | DSP Large Cap Fund,Large Cap,164,0.0006081479376783414,0.007324468909216231
+DSP Asset Managers Private Limited | DSP Midcap Fund,Mid Cap,164,0.0007119655557999449,0.008580187265391004
+DSP Asset Managers Private Limited | DSP Multi Cap Fund,Multi Cap,32,0.0012253746403880282,0.014813138641455614
+DSP Asset Managers Private Limited | DSP Natural Resources And New Energy Fund,Sectoral/Thematic,164,0.0007312312336516202,0.008813385992446854
+DSP Asset Managers Private Limited | DSP Quant Fund,Sectoral/Thematic,87,0.0006114877726858596,0.007364841288535651
+DSP Asset Managers Private Limited | DSP Small Cap Fund,Small Cap,164,0.0006365447170965934,0.007667784649217024
+DSP Asset Managers Private Limited | DSP Value Fund,Value,69,0.0006479133563092413,0.007805263764585124
+DSP Mutual Fund | dsp blackrock technology com,Pre-2018 equity,54,0.00045764696906609893,0.005506871005389824
+Deutsche Mutual Fund | dws alpha equity,Pre-2018 equity,37,0.0008073438181409755,0.009735207630632292
+Deutsche Mutual Fund | dws arbitrage,Pre-2018 equity,18,0.0003831153705387007,0.00460796863197932
+Deutsche Mutual Fund | dws equity income,Pre-2018 equity,37,0.0008557827473699187,0.010322304151211492
+Deutsche Mutual Fund | dws investment opportunity,Pre-2018 equity,37,0.0008659897767089999,0.010446060402963697
+Deutsche Mutual Fund | dws tax saving,ELSS,37,0.0009074514615776896,0.010948923043383019
+Edelweiss Asset Management Limited | Edelweiss Business Cycle Fund,Sectoral/Thematic,26,0.0013221621237438155,0.015992477897739388
+Edelweiss Asset Management Limited | Edelweiss Consumption Fund,Sectoral/Thematic,19,0.0013900619020944453,0.016820643214032094
+Edelweiss Asset Management Limited | Edelweiss ELSS Tax Saver Fund,ELSS,164,0.0010662623695111588,0.012877356593553602
+Edelweiss Asset Management Limited | Edelweiss Flexi Cap Fund,Flexi Cap,118,0.0012248629625504456,0.014806907571877526
+Edelweiss Asset Management Limited | Edelweiss Focused Fund,Focused,49,0.0013441600169843305,0.016260709628123093
+Edelweiss Asset Management Limited | Edelweiss Large & Mid Cap Fund,Large & Mid Cap,118,0.0011529719604585489,0.013931819265820433
+Edelweiss Asset Management Limited | Edelweiss Large Cap Fund,Large Cap,164,0.0009441392633111002,0.01139409495428012
+Edelweiss Asset Management Limited | Edelweiss Mid Cap Fund,Mid Cap,118,0.0011138744706395696,0.01345622457412543
+Edelweiss Asset Management Limited | Edelweiss Multi Cap Fund,Multi Cap,35,0.0012803380181397757,0.015482690116686237
+Edelweiss Asset Management Limited | Edelweiss Recently Listed IPO Fund,Sectoral/Thematic,103,0.0008082076371412318,0.009745674426371531
+Edelweiss Asset Management Limited | Edelweiss Small Cap Fund,Small Cap,91,0.001271734329806151,0.015377852769819178
+Edelweiss Asset Management Limited | Edelweiss Technology Fund,Sectoral/Thematic,30,0.001413281127556894,0.017104000141404896
+Edelweiss Mutual Fund | edelweiss emerging leaders,Pre-2018 equity,46,0.00045611495098425855,0.005488385718815714
+Edelweiss Mutual Fund | edelweiss equity savings advantage,Pre-2018 equity,42,0.00030432929286281694,0.003658628014229226
+Edelweiss Mutual Fund | edelweiss tax advantage,ELSS,39,0.0006279475772133962,0.007563833280610721
+Franklin Templeton Asset Management (India) Private Limited | Franklin Build India Fund,Sectoral/Thematic,164,0.0009215521457684269,0.01111999837461175
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Dividend Yield Fund,Dividend Yield,164,0.0006069275582382423,0.007309717200376209
+Franklin Templeton Asset Management (India) Private Limited | Franklin India ELSS Tax Saver Fund,ELSS,164,0.0007164279814459149,0.008634197280596334
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Flexi Cap Fund,Flexi Cap,164,0.0007086571673813337,0.008540146760084077
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Focused Equity Fund,Focused,164,0.0007794572073184501,0.00939736704793015
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Large & Mid Cap Fund,Large & Mid Cap,164,0.0006203744243006615,0.00747227222136404
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Large Cap Fund,Large Cap,164,0.0006699220146867276,0.008071464216461433
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Mid Cap Fund,Mid Cap,164,0.000767335617060003,0.009250551710505484
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Multi Cap Fund,Multi Cap,26,0.0011935341673654533,0.014425467143668769
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Opportunities Fund,Sectoral/Thematic,164,0.0006843417224757473,0.008245912460315585
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Small Cap Fund,Small Cap,164,0.0008115131502258473,0.009785727951218348
+Franklin Templeton Asset Management (India) Private Limited | Franklin India Technology Fund,Sectoral/Thematic,164,0.0006577436019183722,0.007924154456023125
+Franklin Templeton Asset Management (India) Private Limited | Templeton India Value Fund,Value,164,0.0007461789335290426,0.008994355499142737
+Goldman Sachs Mutual Fund | goldman sachs cnx 500,Pre-2018 equity,45,0.0004945234442783491,0.005951924060507485
+Goldman Sachs Mutual Fund | goldman sachs india equity,Pre-2018 equity,45,0.0005265295450356446,0.006338357448774756
+Groww Asset Management Limited | Groww Banking & Financial Services Fund,Sectoral/Thematic,31,0.0016025687807825525,0.019416928751193607
+Groww Asset Management Limited | Groww ELSS Tax Saver Fund,ELSS,105,0.0013695499108419282,0.016570389820800058
+Groww Asset Management Limited | Groww Large Cap Fund,Large Cap,164,0.0012015358150001274,0.014522876721893452
+Groww Asset Management Limited | Groww Multicap Fund,Multi Cap,21,0.0015265528701253164,0.018487449872603756
+Groww Asset Management Limited | Groww Value Fund,Value,132,0.0014484698419696227,0.01753357781900755
+HDFC Asset Management Company Limited | HDFC Banking & Financial Services Fund,Sectoral/Thematic,62,0.0011484986604809806,0.01387739327240367
+HDFC Asset Management Company Limited | HDFC Business Cycle Fund,Sectoral/Thematic,46,0.001002209547921174,0.012099123888499097
+HDFC Asset Management Company Limited | HDFC Consumption Fund,Sectoral/Thematic,38,0.0010007296099626534,0.012081149921167045
+HDFC Asset Management Company Limited | HDFC DIVIDEND YIELD FUND,Dividend Yield,69,0.001126235081259873,0.013606558976472005
+HDFC Asset Management Company Limited | HDFC Defence Fund,Sectoral/Thematic,39,0.0009141154793849101,0.011029770055439814
+HDFC Asset Management Company Limited | HDFC ELSS - Tax Saver Fund,ELSS,164,0.0005088677250111983,0.006125094845771839
+HDFC Asset Management Company Limited | HDFC Flexi Cap Fund,Flexi Cap,164,0.0005877400652732883,0.007077810922253569
+HDFC Asset Management Company Limited | HDFC Focused Fund,Focused,164,0.000834095992776542,0.010059411018044306
+HDFC Asset Management Company Limited | HDFC Housing Opportunities Fund,Sectoral/Thematic,105,0.0008394113640271299,0.010123839161836123
+HDFC Asset Management Company Limited | HDFC INNOVATION FUND,Sectoral/Thematic,14,0.0010003348155280345,0.012076355164460262
+HDFC Asset Management Company Limited | HDFC Infrastructure Fund,Sectoral/Thematic,164,0.0006743062190228567,0.008124500707000548
+HDFC Asset Management Company Limited | HDFC Large & Mid Cap Fund,Large & Mid Cap,147,0.00037354189464618756,0.00449256417900723
+HDFC Asset Management Company Limited | HDFC Large Cap Fund,Large Cap,164,0.0005173302590823366,0.006227272448512178
+HDFC Asset Management Company Limited | HDFC Long Term Advantage Plan,ELSS,107,0.00045791635693534163,0.005510121466885565
+HDFC Asset Management Company Limited | HDFC MNC Fund,Sectoral/Thematic,42,0.0009779631048623168,0.011804689079229824
+HDFC Asset Management Company Limited | HDFC Manufacturing Fund,Sectoral/Thematic,28,0.0008995822579648231,0.010853463195600321
+HDFC Asset Management Company Limited | HDFC Mid Cap Fund,Mid Cap,164,0.0006294267945764458,0.007581718310344376
+HDFC Asset Management Company Limited | HDFC Multi Cap Fund,Multi Cap,57,0.0009525952300895727,0.011496727939761309
+HDFC Asset Management Company Limited | HDFC Pharma and Healthcare Fund,Sectoral/Thematic,35,0.0009850313466154563,0.01189051288071119
+HDFC Asset Management Company Limited | HDFC Small Cap Fund,Small Cap,147,0.0008906436351286081,0.010745041356353457
+HDFC Asset Management Company Limited | HDFC Technology Fund,Sectoral/Thematic,36,0.0009888983018337715,0.011937469193760153
+HDFC Asset Management Company Limited | HDFC Transportation and Logistics Fund,Sectoral/Thematic,37,0.000979569125078776,0.011824189012562325
+HDFC Asset Management Company Limited | HDFC Value Fund,Value,164,0.000731186157985668,0.008812840317372173
+HDFC Mutual Fund | hdfc focused large cap,Pre-2018 equity,16,0.000435893844159107,0.0052444302615999305
+HSBC Asset Management (India) Private Ltd. | HSBC Business Cycles Fund,Sectoral/Thematic,46,0.0009295506581043208,0.011217052501629965
+HSBC Asset Management (India) Private Ltd. | HSBC Consumption Fund,Sectoral/Thematic,36,0.0011166429757977748,0.013489894238834399
+HSBC Asset Management (India) Private Ltd. | HSBC ELSS Tax saver Fund,ELSS,46,0.0006491347336581865,0.007820034799086661
+HSBC Asset Management (India) Private Ltd. | HSBC Financial Services fund,Sectoral/Thematic,18,0.00120153816366507,0.01452290531518563
+HSBC Asset Management (India) Private Ltd. | HSBC Flexi Cap Fund,Flexi Cap,164,0.0007154729062057212,0.00862263748826031
+HSBC Asset Management (India) Private Ltd. | HSBC Focused Fund,Focused,74,0.0011304929787727363,0.013658350293751287
+HSBC Asset Management (India) Private Ltd. | HSBC India Export Opportunities Fund,Sectoral/Thematic,24,0.0011360534929332306,0.01372599008972708
+HSBC Asset Management (India) Private Ltd. | HSBC Infrastructure Fund,Sectoral/Thematic,46,0.0008642503096995003,0.010424968972048143
+HSBC Asset Management (India) Private Ltd. | HSBC Large & Mid Cap Fund,Large & Mid Cap,89,0.001128306882837082,0.013631759189740578
+HSBC Asset Management (India) Private Ltd. | HSBC Large Cap Fund,Large Cap,164,0.0006955571998454924,0.008381617102636962
+HSBC Asset Management (India) Private Ltd. | HSBC Midcap Fund,Mid Cap,46,0.0008882380835584179,0.010715864985611612
+HSBC Asset Management (India) Private Ltd. | HSBC Multi Cap Fund,Multi Cap,43,0.00108204811899459,0.013069243105917838
+HSBC Asset Management (India) Private Ltd. | HSBC Small Cap Fund,Small Cap,46,0.0008516615350099684,0.010272340353481457
+HSBC Asset Management (India) Private Ltd. | HSBC Value Fund,Value,46,0.0008009195995423297,0.009657369514558312
+HSBC Mutual Fund | hsbc dividend yield equity,Pre-2018 equity,53,0.0005948606353805422,0.007163866216651327
+HSBC Mutual Fund | hsbc midcap,Mid Cap,14,0.001159265292489242,0.014008394272396973
+HSBC Mutual Fund | hsbc tax saver equity,ELSS,155,0.0007602767048445861,0.009165064798649425
+Helios Capital Asset Management (India) Pvt. Ltd. | Helios Financial Services Fund,Sectoral/Thematic,27,0.0013252589858074341,0.01603023526205183
+Helios Capital Asset Management (India) Pvt. Ltd. | Helios Flexi Cap Fund,Flexi Cap,34,0.0011865780130262298,0.01434079267638877
+Helios Capital Asset Management (India) Pvt. Ltd. | Helios Large & Mid Cap Fund,Large & Mid Cap,22,0.0013528617613586607,0.016366834059787116
+Helios Capital Asset Management (India) Pvt. Ltd. | Helios Mid Cap Fund,Mid Cap,18,0.0012563853631975784,0.015190849983057975
+ICICI Prudential Asset Management Company Limited | ICICI PRUDENTIAL ENERGY OPPORTUNITIES FUND,Sectoral/Thematic,26,0.0009433743522132948,0.011384811478076573
+ICICI Prudential Asset Management Company Limited | ICICI PRUDENTIAL HOUSING OPPORTUNITIES FUND,Sectoral/Thematic,53,0.0009745805383498788,0.011763619952849025
+ICICI Prudential Asset Management Company Limited | ICICI PRUDENTIAL PSU EQUITY FUND,Sectoral/Thematic,48,0.0011373468373276493,0.013741723373739134
+ICICI Prudential Asset Management Company Limited | ICICI PRUDENTIAL TRANSPORTATION AND LOGISTICS FUND,Sectoral/Thematic,47,0.0010112980912108298,0.012209511988402477
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Active Momentum Fund,Sectoral/Thematic,14,0.0008667069068720359,0.010454755896554868
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Banking & Financial Services Fund,Sectoral/Thematic,164,0.0007755672942976128,0.009350250532078164
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Bharat Consumption Fund,Sectoral/Thematic,89,0.0009094794151018817,0.010973525231909642
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Blended Plan A,Pre-2018 equity,38,0.0003716242301421064,0.004469449088150945
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Business Cycle Fund,Sectoral/Thematic,68,0.000960874740202595,0.011597229300950085
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Dividend Yield Fund,Dividend Yield,148,0.0008361128581072482,0.010083857159566945
+ICICI Prudential Asset Management Company Limited | ICICI Prudential ELSS - Tax Saver Fund,ELSS,164,0.0006748695189664861,0.008131315247725368
+ICICI Prudential Asset Management Company Limited | ICICI Prudential ESG Exclusionary Strategy Fund,Sectoral/Thematic,71,0.0010655458672600337,0.012868647884119122
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Equity Minimum Variance Fund,Sectoral/Thematic,21,0.0009867208498715912,0.01191102819647094
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Exports & Services Fund,Sectoral/Thematic,164,0.0005587832147752124,0.00672793009512529
+ICICI Prudential Asset Management Company Limited | ICICI Prudential FMCG Fund,Sectoral/Thematic,164,0.0006511669995175423,0.007844612997771172
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Flexi Cap fund,Flexi Cap,62,0.0009234415414216492,0.011142923503256519
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Focused Fund,Focused,164,0.0009107279115127295,0.010988671707183872
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Healthcare Fund,Sectoral/Thematic,98,0.0008607478916169471,0.01038250269627361
+ICICI Prudential Asset Management Company Limited | ICICI Prudential India Opportunities Fund,Sectoral/Thematic,92,0.0010319868631711445,0.012460839646310173
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Infrastructure Fund,Sectoral/Thematic,164,0.0005434967093369743,0.006543274808308519
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Innovation Fund,Sectoral/Thematic,40,0.0009478457750564465,0.011439080883823394
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Large & Mid Cap Fund,Large & Mid Cap,164,0.0007339074426645577,0.008845784058379769
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Large Cap Fund (erstwhile Bluechip Fund),Large Cap,164,0.0006068472200944502,0.007308746096129637
+ICICI Prudential Asset Management Company Limited | ICICI Prudential MNC Fund,Sectoral/Thematic,87,0.0010535307953117102,0.012722622135289186
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Manufacturing Fund,Sectoral/Thematic,95,0.0008979951400980046,0.010834211255825288
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Mid Cap Fund,Mid Cap,164,0.0007478359463303287,0.009014418697373738
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Multi Cap Fund,Multi Cap,164,0.0007230187464798339,0.008713972487226052
+ICICI Prudential Asset Management Company Limited | ICICI Prudential QUANT FUND,Sectoral/Thematic,69,0.0005520493848714516,0.006646583766116043
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Quality Fund,Sectoral/Thematic,16,0.0010270893293786096,0.012401338660666505
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Rural Opportunities Fund,Sectoral/Thematic,20,0.0009615680963943742,0.01160564610239545
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Small Cap Fund,Small Cap,164,0.0007730740919257183,0.00932005281055015
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Technology Fund,Sectoral/Thematic,164,0.0006935421701114783,0.008357234370129474
+ICICI Prudential Asset Management Company Limited | ICICI Prudential Value Fund (erstwhile Value Discovery Fund),Value,164,0.0006067374386754151,0.007307419091600931
+IDBI Mutual Fund | idbi banking financial services,Sectoral/Thematic,61,0.0010651706109966266,0.012864086870739033
+IDBI Mutual Fund | idbi dividend yield,Dividend Yield,55,0.0010096025801809207,0.012188917649204933
+IDBI Mutual Fund | idbi equity advantage,ELSS,118,0.0009905624568788392,0.011957677645675346
+IDBI Mutual Fund | idbi flexi cap,Flexi Cap,111,0.0010908337798469553,0.013176054529751235
+IDBI Mutual Fund | idbi focused 30 equity,Focused,68,0.0010894983110738984,0.013159817880063596
+IDBI Mutual Fund | idbi healthcare,Sectoral/Thematic,52,0.0011764098859278272,0.014217032873762525
+IDBI Mutual Fund | idbi india top 100 equity,Large Cap,126,0.0009251950499588425,0.01116420030009424
+IDBI Mutual Fund | idbi long term value,Value,59,0.0008721566921624156,0.01052083919495339
+IDBI Mutual Fund | idbi midcap,Mid Cap,77,0.001151593477012479,0.013915047145801607
+IDBI Mutual Fund | idbi small cap,Small Cap,73,0.0012236481791992012,0.014792114433267889
+ING Mutual Fund | ing core equity,Pre-2018 equity,20,0.0008391542201957702,0.010120722201275356
+ING Mutual Fund | ing dividend yield,Pre-2018 equity,20,0.0008594077427555901,0.010366254071401126
+ING Mutual Fund | ing midcap,Pre-2018 equity,20,0.0008607210122343302,0.010382176794831777
+ING Mutual Fund | ing tax savings,ELSS,20,0.0009365333382758674,0.011301788114810085
+ITI Asset Management Limited | ITI Banking and Financial Services Fund,Sectoral/Thematic,57,0.0016300017078865025,0.019752571077610748
+ITI Asset Management Limited | ITI Bharat Consumption Fund,Sectoral/Thematic,18,0.0014425242740227942,0.017460982628454857
+ITI Asset Management Limited | ITI ELSS Tax Saver Fund,ELSS,83,0.001631566806506053,0.019771723417557396
+ITI Asset Management Limited | ITI Flexi Cap Fund,Flexi Cap,43,0.0014054365912227304,0.017008260136274655
+ITI Asset Management Limited | ITI Focused Fund,Focused,39,0.0015258262048137479,0.01847856871732456
+ITI Asset Management Limited | ITI Large & Mid Cap Fund,Large & Mid Cap,24,0.0013896821542927955,0.0168160095997425
+ITI Asset Management Limited | ITI Large Cap Fund,Large Cap,69,0.0016584691709800874,0.020100987809646087
+ITI Asset Management Limited | ITI Mid Cap Fund,Mid Cap,66,0.0015989407038431685,0.019372547440703602
+ITI Asset Management Limited | ITI Multi Cap Fund,Multi Cap,88,0.0015819578367760997,0.019164826186057082
+ITI Asset Management Limited | ITI Pharma and Healthcare Fund,Sectoral/Thematic,58,0.0016484088157332414,0.019977844303100012
+ITI Asset Management Limited | ITI Small Cap Fund,Small Cap,79,0.0015339061109521366,0.01857732403972001
+ITI Asset Management Limited | ITI Value Fund,Value,63,0.001634619966818705,0.01980908642065149
+Invesco Asset Management (India) Private Limited | Invesco India Business Cycle Fund,Sectoral/Thematic,18,0.0012849158776008845,0.015538476493451858
+Invesco Asset Management (India) Private Limited | Invesco India Contra Fund,Contra,164,0.0010485159192046777,0.012661679827246752
+Invesco Asset Management (India) Private Limited | Invesco India ELSS Tax Saver Fund,ELSS,164,0.001086668903600558,0.013125418760516983
+Invesco Asset Management (India) Private Limited | Invesco India ESG Integration Strategy Fund,Sectoral/Thematic,66,0.0012989882656611802,0.015709983592507637
+Invesco Asset Management (India) Private Limited | Invesco India Financial Services Fund,Sectoral/Thematic,164,0.0011783379472072978,0.014240498816304958
+Invesco Asset Management (India) Private Limited | Invesco India Flexi Cap Fund,Flexi Cap,55,0.0012355378167308324,0.014936910887413335
+Invesco Asset Management (India) Private Limited | Invesco India Focused Fund,Focused,71,0.0012308090617654003,0.01487931986594826
+Invesco Asset Management (India) Private Limited | Invesco India Infrastructure Fund,Sectoral/Thematic,164,0.0012112729155230812,0.014641425782504935
+Invesco Asset Management (India) Private Limited | Invesco India Large & Mid Cap Fund,Large & Mid Cap,164,0.0011108501249085156,0.01341944473746226
+Invesco Asset Management (India) Private Limited | Invesco India Large Cap Fund,Large Cap,164,0.001205981350403377,0.014576999333894891
+Invesco Asset Management (India) Private Limited | Invesco India Manufacturing Fund,Sectoral/Thematic,25,0.00125472442248072,0.015170616122884617
+Invesco Asset Management (India) Private Limited | Invesco India Mid Cap Fund,Mid Cap,164,0.0012061721656396868,0.014579322497553227
+Invesco Asset Management (India) Private Limited | Invesco India Multi Cap Fund,Multi Cap,164,0.001142337862910949,0.013802440522480808
+Invesco Asset Management (India) Private Limited | Invesco India PSU Equity Fund,Sectoral/Thematic,164,0.0011301126546512626,0.013653724079649487
+Invesco Asset Management (India) Private Limited | Invesco India Small Cap Fund,Small Cap,94,0.00124429224317615,0.015043538774507148
+Invesco Asset Management (India) Private Limited | Invesco India Technology Fund,Sectoral/Thematic,24,0.0013256685493608237,0.01603522882176489
+Invesco Mutual Fund | religare invesco agile,Pre-2018 equity,32,0.0009509429754085051,0.011476673136132431
+JM Financial Asset Management Limited | JM ELSS - Tax Saver Fund,ELSS,164,0.0009045293083241245,0.010913473892697922
+JM Financial Asset Management Limited | JM Flexi Cap Fund,Flexi Cap,164,0.0008773450776579352,0.010583756813558276
+JM Financial Asset Management Limited | JM Focused Fund,Focused,164,0.0010578002351166707,0.01277450856372564
+JM Financial Asset Management Limited | JM Large & Mid Cap Fund,Large & Mid Cap,14,0.0014169655743188256,0.017148970722026258
+JM Financial Asset Management Limited | JM Large Cap Fund,Large Cap,164,0.0009292048045003723,0.011212855713595093
+JM Financial Asset Management Limited | JM Mid Cap Fund,Mid Cap,46,0.00142457233185459,0.01724182142689501
+JM Financial Asset Management Limited | JM Small Cap Fund,Small Cap,27,0.0013845656562336073,0.016753581070578782
+JM Financial Asset Management Limited | JM Value Fund,Value,164,0.0007937111145670854,0.009570036092123368
+JPMorgan Mutual Fund | jpmorgan india economic resurgence,Pre-2018 equity,21,0.0008116803240929149,0.009787753670670973
+JPMorgan Mutual Fund | jpmorgan india equity,Pre-2018 equity,46,0.0009181832818085336,0.011079123292173199
+JPMorgan Mutual Fund | jpmorgan india equity income,Pre-2018 equity,25,0.0003106091235090515,0.003734264538627574
+JPMorgan Mutual Fund | jpmorgan india mid and small cap,Pre-2018 equity,46,0.0008122003313700716,0.009794054854094458
+JPMorgan Mutual Fund | jpmorgan india tax advantage,ELSS,46,0.0009447109848595149,0.011401033807659111
+JPMorgan Mutual Fund | jpmorgan india top 100,Pre-2018 equity,29,0.0009970534989026025,0.012036504633393674
+Kotak Mahindra Asset Management Company Limited. | Kotak Active Momentum Fund,Sectoral/Thematic,13,0.0011332877485560136,0.013692346164547509
+Kotak Mahindra Asset Management Company Limited. | Kotak Banking and Financial Services Fund,Sectoral/Thematic,42,0.0012829228721073355,0.015514189098731812
+Kotak Mahindra Asset Management Company Limited. | Kotak Business Cycle Fund,Sectoral/Thematic,47,0.001233841250950431,0.014916248210960159
+Kotak Mahindra Asset Management Company Limited. | Kotak Consumption Fund,Sectoral/Thematic,34,0.0013105729661188408,0.015851193758486426
+Kotak Mahindra Asset Management Company Limited. | Kotak Contra Fund,Contra,164,0.0010931231120410627,0.01320388887080104
+Kotak Mahindra Asset Management Company Limited. | Kotak ELSS Tax Saver Fund,ELSS,164,0.000965353591007604,0.011651600278831609
+Kotak Mahindra Asset Management Company Limited. | Kotak ESG Exclusionary Strategy Fund,Sectoral/Thematic,69,0.0013138266297505773,0.015890857389806667
+Kotak Mahindra Asset Management Company Limited. | Kotak Energy Opportunities Fund,Sectoral/Thematic,16,0.001271432177919023,0.015374171196481212
+Kotak Mahindra Asset Management Company Limited. | Kotak Flexi Cap Fund,Flexi Cap,164,0.000784561433183459,0.00945919524720873
+Kotak Mahindra Asset Management Company Limited. | Kotak Focused Fund,Focused,86,0.0012755868521027482,0.01542479504469485
+Kotak Mahindra Asset Management Company Limited. | Kotak Healthcare Fund,Sectoral/Thematic,33,0.0013544244728351485,0.01638589369588561
+Kotak Mahindra Asset Management Company Limited. | Kotak Infrastructure and Economic Reform Fund,Sectoral/Thematic,139,0.0011936845547426355,0.01442729782674479
+Kotak Mahindra Asset Management Company Limited. | Kotak Large & Mid Cap Fund,Large & Mid Cap,164,0.0009127257708289884,0.011012909755364841
+Kotak Mahindra Asset Management Company Limited. | Kotak Large Cap Fund,Large Cap,164,0.0009304089454365104,0.011227467532699542
+Kotak Mahindra Asset Management Company Limited. | Kotak MNC Fund,Sectoral/Thematic,23,0.0011932345162879818,0.01442181946601595
+Kotak Mahindra Asset Management Company Limited. | Kotak Manufacture in India Fund,Sectoral/Thematic,54,0.0012746671941459258,0.01541358898462164
+Kotak Mahindra Asset Management Company Limited. | Kotak Mid Cap Fund,Mid Cap,164,0.0009622117431870975,0.011613459533325265
+Kotak Mahindra Asset Management Company Limited. | Kotak Multi Cap Fund,Multi Cap,59,0.0011628606023563399,0.014052143308761256
+Kotak Mahindra Asset Management Company Limited. | Kotak Pioneer Fund,Sectoral/Thematic,82,0.0012839694202732464,0.01552694259295917
+Kotak Mahindra Asset Management Company Limited. | Kotak Quant Fund,Sectoral/Thematic,37,0.00034907012800033466,0.004197626995393389
+Kotak Mahindra Asset Management Company Limited. | Kotak Small Cap Fund,Small Cap,164,0.0010492079407339828,0.012670089266375806
+Kotak Mahindra Asset Management Company Limited. | Kotak Special Opportunities Fund,Sectoral/Thematic,26,0.0011402387281046035,0.01377690354823935
+Kotak Mahindra Asset Management Company Limited. | Kotak Technology Fund,Sectoral/Thematic,30,0.0012093863547261573,0.014618455849669143
+Kotak Mahindra Asset Management Company Limited. | Kotak Transportation & Logistics Fund,Sectoral/Thematic,21,0.0013068272651140219,0.015805533886616985
+L&T Mutual Fund | l t business cycles,Sectoral/Thematic,99,0.000677489352912919,0.008163009385628861
+L&T Mutual Fund | l t emerging businesses,Small Cap,102,0.0007638273902844239,0.009208064447135955
+L&T Mutual Fund | l t flexicap,Multi Cap,118,0.0005799037318581007,0.006983113804775343
+L&T Mutual Fund | l t focused equity,Focused,48,0.0009657460321893676,0.011656364455044033
+L&T Mutual Fund | l t india large cap,Large Cap,118,0.0006568927774611753,0.007913863710297564
+L&T Mutual Fund | l t india value,Value,118,0.000712698416751813,0.00858905709282598
+L&T Mutual Fund | l t infrastructure,Sectoral/Thematic,118,0.000759640759724058,0.009157363544849861
+L&T Mutual Fund | l t large and midcap,Large & Mid Cap,118,0.0006614010475423382,0.007968392560262938
+L&T Mutual Fund | l t mid cap,Mid Cap,118,0.0007934220058343872,0.00956653359203452
+L&T Mutual Fund | l t tax advantage,ELSS,118,0.0005492698925501759,0.006613008728650671
+LIC Mutual Fund Asset Management Limited | LIC MF Banking and Financial Services Fund,Sectoral/Thematic,138,0.0009866676931643377,0.0119103827183773
+LIC Mutual Fund Asset Management Limited | LIC MF Dividend Yield Fund,Dividend Yield,38,0.0011556222335467063,0.013964066133161479
+LIC Mutual Fund Asset Management Limited | LIC MF ELSS Tax Saver Fund,ELSS,164,0.0008877938823107117,0.010710477464990875
+LIC Mutual Fund Asset Management Limited | LIC MF Flexi Cap Fund,Flexi Cap,164,0.0006607647803797333,0.007960696543373835
+LIC Mutual Fund Asset Management Limited | LIC MF Focused Fund,Focused,38,0.0008558631883299186,0.010323279407234986
+LIC Mutual Fund Asset Management Limited | LIC MF Healthcare Fund,Sectoral/Thematic,38,0.0010554509133437432,0.01274595696774039
+LIC Mutual Fund Asset Management Limited | LIC MF Infrastructure Fund,Sectoral/Thematic,164,0.0009143879667818534,0.011033075975288131
+LIC Mutual Fund Asset Management Limited | LIC MF Large & Mid Cap Fund,Large & Mid Cap,139,0.0011191748444326704,0.013520686985911246
+LIC Mutual Fund Asset Management Limited | LIC MF Large Cap Fund,Large Cap,164,0.0008594841411058555,0.010367180355605576
+LIC Mutual Fund Asset Management Limited | LIC MF Manufacturing Fund,Sectoral/Thematic,23,0.0013083229763156284,0.015823766270826933
+LIC Mutual Fund Asset Management Limited | LIC MF Mid Cap Fund,Mid Cap,38,0.000870193459919446,0.010497032830254716
+LIC Mutual Fund Asset Management Limited | LIC MF Multi Cap Fund,Multi Cap,46,0.0013221809639956342,0.015992707596415023
+LIC Mutual Fund Asset Management Limited | LIC MF Small Cap Fund,Small Cap,38,0.0010129557151980651,0.012229646541860983
+LIC Mutual Fund Asset Management Limited | LIC MF Value Fund,Value,38,0.000943772644492729,0.011389645410772031
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Business Cycle Fund,Sectoral/Thematic,36,0.0014007022739344057,0.016950483700022057
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Consumption Fund,Sectoral/Thematic,94,0.0014172694192045553,0.017152679394940806
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife ELSS Tax Saver Fund,ELSS,119,0.00148599244015634,0.017991847026956886
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Flexi Cap Fund,Flexi Cap,61,0.0014788743421667895,0.01790489675189688
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Focused Fund,Focused,70,0.0015118580544898224,0.018307867882979112
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Large & Mid Cap Fund,Large & Mid Cap,80,0.0014062122176050737,0.017017726001577804
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Large Cap Fund,Large Cap,90,0.0014800643945626153,0.017919433177624455
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Manufacturing Fund,Sectoral/Thematic,27,0.0013019476885448337,0.01574605521743422
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Mid Cap Fund,Mid Cap,103,0.0013482222124730533,0.01631024983160545
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Multi Cap Fund,Multi Cap,112,0.0014576285389862767,0.01764541534553321
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Small Cap Fund,Small Cap,45,0.0012845133816835777,0.015533571504209531
+Mahindra Manulife Investment Management Pvt Ltd | Mahindra Manulife Value Fund,Value,18,0.0014504708981375627,0.017558011814472918
+Mahindra Manulife Investment Management Pvt Ltd | MahindraManulife Banking & Financial Services Fund,Sectoral/Thematic,14,0.0014685847792185742,0.017779218952949094
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Banking and Financial Services Fund,Sectoral/Thematic,69,0.0012840351069873504,0.015527743072810019
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset ELSS Tax Saver Fund,ELSS,129,0.0010454704510039902,0.012624672156157146
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Flexi Cap Fund,Flexi Cap,43,0.0012227158466481475,0.014780761012129107
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Focused Fund,Focused,88,0.001109512430843068,0.013403177125904664
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Great Consumer Fund,Sectoral/Thematic,164,0.001167108308520672,0.014103833372616448
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Healthcare Fund,Sectoral/Thematic,98,0.0012740491280337017,0.015406057899798986
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Large & Midcap Fund,Large & Mid Cap,164,0.000782571108655781,0.009435085718372704
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Large Cap Fund,Large Cap,164,0.0007964410699093242,0.009603109607216442
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Midcap Fund,Mid Cap,86,0.0010610076677636958,0.012813490186180498
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Multicap Fund,Multi Cap,37,0.0012289612013014037,0.014856815851003846
+Mirae Asset Investment Managers (India) Pvt. Ltd | Mirae Asset Small Cap Fund,Small Cap,19,0.0013019787257781746,0.015746433528872616
+Morgan Stanley Mutual Fund | morgan stanley,Pre-2018 equity,17,0.00024805384957527757,0.00298108080518511
+Morgan Stanley Mutual Fund | morgan stanley a c e,Pre-2018 equity,17,0.0004102862234595296,0.004935574701400602
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Active Momentum Fund,Sectoral/Thematic,18,8.493976550642009e-05,0.001019796825605379
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Business Cycle Fund,Sectoral/Thematic,24,0.001097757134098031,0.013260232947415407
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Digital India Fund,Sectoral/Thematic,22,0.0012048460983249403,0.01456317782027372
+Motilal Oswal Asset Management Company Limited | Motilal Oswal ELSS Tax Saver Fund,ELSS,140,0.001068788206404588,0.012908057414772411
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Flexi Cap Fund,Flexi Cap,149,0.0007573468032983775,0.009129584370973332
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Focused Fund,Focused,160,0.0010554442986924237,0.012745876580206872
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Infrastructure Fund,Sectoral/Thematic,16,0.0008903407790842159,0.010741368040087185
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Innovation Opportunities Fund,Sectoral/Thematic,19,0.001173470961417249,0.014181265016916855
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Large Cap Fund,Large Cap,31,0.0010456857094154838,0.012627287871276094
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Large and Midcap Fund,Large & Mid Cap,83,0.0011810256276011148,0.014273210795457514
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Manufacturing Fund,Sectoral/Thematic,25,0.0011765311603109834,0.014218508857376966
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Midcap Fund,Mid Cap,151,0.0009612710804803753,0.011602040553113868
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Multi Cap Fund,Multi Cap,27,0.0010707916501239932,0.012932409358929364
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Quant Fund,Sectoral/Thematic,27,0.00013268898633158322,0.0015935361674948023
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Services Fund,Sectoral/Thematic,15,0.0009130100553529824,0.011016358745133292
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Small Cap Fund,Small Cap,33,0.0010946962183546415,0.013223015580544839
+Motilal Oswal Asset Management Company Limited | Motilal Oswal Special Opportunities Fund,Sectoral/Thematic,13,9.009933931898858e-05,0.0010817767706809978
+NJ Asset Management Private Limited | NJ ELSS Tax Saver Fund,ELSS,39,0.0014888903706907987,0.018027248478386992
+NJ Asset Management Private Limited | NJ Flexi Cap Fund,Flexi Cap,36,0.0013172363439096727,0.015932425009489437
+Navi AMC Limited | Navi ELSS Tax Saver Fund,ELSS,123,0.0014889759997003449,0.018028294550904045
+Navi AMC Limited | Navi Flexi Cap Fund,Flexi Cap,98,0.0016176706511074313,0.019601686719012967
+Navi AMC Limited | Navi Large & Midcap Fund,Large & Mid Cap,129,0.0015443908820838468,0.018705486703558094
+Navi Mutual Fund | navi large cap equity,Large Cap,113,0.0012350290983134838,0.014930715101136638
+Nippon Life India Asset Management Limited | Nippon India Active Momentum Fund,Sectoral/Thematic,18,0.0008150274442530096,0.00982831305658105
+Nippon Life India Asset Management Limited | Nippon India Banking & Financial Services Fund,Sectoral/Thematic,164,0.0005826953895044438,0.00701684819513404
+Nippon Life India Asset Management Limited | Nippon India Consumption Fund,Sectoral/Thematic,164,0.000788124516977202,0.009502357622337643
+Nippon Life India Asset Management Limited | Nippon India ELSS Tax Saver Fund,ELSS,164,0.0006137011968181654,0.0073915983516794626
+Nippon Life India Asset Management Limited | Nippon India Flexi Cap Fund,Flexi Cap,61,0.001147456490572793,0.013864713761570613
+Nippon Life India Asset Management Limited | Nippon India Focused Fund,Focused,164,0.00062697093194975,0.007552024960459036
+Nippon Life India Asset Management Limited | Nippon India Growth Mid Cap Fund,Mid Cap,164,0.0006112847854653019,0.0073623875052535315
+Nippon Life India Asset Management Limited | Nippon India Innovation Fund,Sectoral/Thematic,36,0.00108698428895632,0.013129253066820112
+Nippon Life India Asset Management Limited | Nippon India Large Cap Fund,Large Cap,164,0.0007170359443134854,0.008641555853105443
+Nippon Life India Asset Management Limited | Nippon India MNC Fund,Sectoral/Thematic,14,0.0010476966524791474,0.0126517241959625
+Nippon Life India Asset Management Limited | Nippon India Multi Cap Fund,Multi Cap,164,0.0006167495485604325,0.007428449632897127
+Nippon Life India Asset Management Limited | Nippon India Pharma Fund,Sectoral/Thematic,164,0.0007163379361545816,0.008633107408063445
+Nippon Life India Asset Management Limited | Nippon India Power & Infra Fund,Sectoral/Thematic,164,0.0005468124253034096,0.006583324544350955
+Nippon Life India Asset Management Limited | Nippon India Quant Fund,Sectoral/Thematic,164,0.0005238167594507173,0.006305598219714437
+Nippon Life India Asset Management Limited | Nippon India Small Cap Fund,Small Cap,164,0.0007469105107380175,0.009003213425317735
+Nippon Life India Asset Management Limited | Nippon India Taiwan Equity Fund,Sectoral/Thematic,55,0.001200567308022991,0.014511085920595468
+Nippon Life India Asset Management Limited | Nippon India Value Fund,Value,164,0.0006002750162547552,0.007229306367829036
+Nippon Life India Asset Management Limited | Nippon India Vision Large & Mid Cap Fund,Large & Mid Cap,164,0.0004898382606166235,0.005895368816123625
+Nippon Life India Asset Management Limited | Reliance Focused Large Cap Fund,Pre-2018 equity,63,0.0005955334692516629,0.0071719980970352815
+Old Bridge Asset Management Private Limited | Old Bridge Focused Fund,Focused,32,0.000879036491307355,0.010604268803644956
+PGIM India Asset Management Private Limite | PGIM India ELSS Tax Saver Fund,ELSS,129,0.0011787471301684253,0.014245478947698675
+PGIM India Asset Management Private Limite | PGIM India Flexi Cap Fund,Flexi Cap,138,0.0012433620084080928,0.015032208092258248
+PGIM India Asset Management Private Limite | PGIM India Healthcare Fund,Sectoral/Thematic,21,0.001453480835343819,0.017594765906865373
+PGIM India Asset Management Private Limite | PGIM India Large Cap Fund,Large Cap,126,0.001246611584604714,0.015071789958025494
+PGIM India Asset Management Private Limite | PGIM India Large and Midcap Fund,Large & Mid Cap,31,0.0014242479262820988,0.01723786144761763
+PGIM India Asset Management Private Limite | PGIM India Midcap Fund,Mid Cap,153,0.0010544554102426462,0.012733858739113924
+PGIM India Asset Management Private Limite | PGIM India Multi Cap Fund,Multi Cap,24,0.0014264731582654415,0.017265024892973324
+PGIM India Asset Management Private Limite | PGIM India Small Cap Fund,Small Cap,61,0.0013669756499580044,0.016538987297149088
+PGIM India Mutual Fund | dhfl pramerica dynamic asset allocation,Pre-2018 equity,37,0.00040642911796054593,0.004889062067457983
+PGIM India Mutual Fund | dhfl pramerica large cap equity,Pre-2018 equity,37,0.000426846581024009,0.005135299655198988
+PGIM India Mutual Fund | pgim india tax,ELSS,40,0.0014431691437107124,0.017468856215875572
+PPFAS Asset Management Pvt. Ltd. | Parag Parikh ELSS Tax Saver Fund,ELSS,86,0.0009907281128050663,0.011959689289111619
+PPFAS Asset Management Pvt. Ltd. | Parag Parikh Flexi Cap Fund,Flexi Cap,160,0.0005840443778130426,0.0070331497745348415
+Principal Mutual Fund | principal dividend yield,Dividend Yield,107,0.00042957860479790817,0.005168252837784992
+Principal Mutual Fund | principal emerging bluechip,Large & Mid Cap,107,0.0008089009485115362,0.009754075279204244
+Principal Mutual Fund | principal equity savings,Pre-2018 equity,13,0.0013744792935436528,0.016630524373276057
+Principal Mutual Fund | principal focused multicap,Focused,107,0.0006064577292345028,0.007304038056535012
+Principal Mutual Fund | principal large cap,Large Cap,14,0.0017436211113853334,0.02114388348870344
+Principal Mutual Fund | principal midcap,Mid Cap,24,0.0015828082141322614,0.019175226335405915
+Principal Mutual Fund | principal multi cap,Multi Cap,107,0.0006255014624726745,0.007534258313737885
+Principal Mutual Fund | principal small cap,Small Cap,31,0.0014713649418204083,0.01781317462001719
+Quantum Asset Management Company Private Limited | QUANTUM ESG BEST IN CLASS STRATEGY FUND,Sectoral/Thematic,86,0.0008232886829324488,0.009928427211533641
+Quantum Asset Management Company Private Limited | QUANTUM SMALL CAP FUND,Small Cap,34,0.0012158551978928972,0.014697219798678995
+Quantum Asset Management Company Private Limited | Quantum ELSS Tax Saver Fund,ELSS,113,0.000543618936079951,0.006544751127464998
+Quantum Asset Management Company Private Limited | Quantum Ethical Fund,Sectoral/Thematic,21,0.001179479433924235,0.014254391816142853
+Quantum Asset Management Company Private Limited | Quantum Value Fund,Value,113,0.0004910413218893648,0.0059098907660999345
+SBI Funds Management Limited | SBI Automotive Opportunities Fund,Sectoral/Thematic,27,0.0009128711386061333,0.011014673381295248
+SBI Funds Management Limited | SBI BANKING & FINANCIAL SERVICES FUND,Sectoral/Thematic,138,0.0008849343912251019,0.010675796648805802
+SBI Funds Management Limited | SBI COMMA FUND,Sectoral/Thematic,164,0.000527338235435801,0.006348123290187635
+SBI Funds Management Limited | SBI CONSUMPTION OPPORTUNITIES FUND,Sectoral/Thematic,164,0.0008454767433263656,0.010197363248197089
+SBI Funds Management Limited | SBI CONTRA FUND,Contra,164,0.0005912095253247225,0.007119739989879026
+SBI Funds Management Limited | SBI Dividend Yield Fund,Dividend Yield,42,0.0008415146696841065,0.010149334673805743
+SBI Funds Management Limited | SBI ELSS Tax Saver Fund,ELSS,164,0.000514631012777478,0.006194680313396095
+SBI Funds Management Limited | SBI ESG Exclusionary Strategy Fund,Sectoral/Thematic,164,0.0005948591087513314,0.007163847765862208
+SBI Funds Management Limited | SBI Energy Opportunities Fund,Sectoral/Thematic,30,0.0008810453553061317,0.010628631095678465
+SBI Funds Management Limited | SBI Equity Minimum Variance Fund,Sectoral/Thematic,90,0.0002987219991445673,0.0035910965816245977
+SBI Funds Management Limited | SBI FLEXICAP FUND,Flexi Cap,164,0.0007337296088979401,0.008843631178528266
+SBI Funds Management Limited | SBI FOCUSED FUND,Focused,164,0.0007582013824671914,0.009139932997492828
+SBI Funds Management Limited | SBI HEALTHCARE OPPORTUNITIES FUND,Sectoral/Thematic,164,0.0008975163623266331,0.010828403693097899
+SBI Funds Management Limited | SBI INFRASTRUCTURE FUND,Sectoral/Thematic,164,0.0005243586891206621,0.0063121424033218965
+SBI Funds Management Limited | SBI Innovative Opportunities Fund,Sectoral/Thematic,25,0.000894142304782487,0.010787477403213508
+SBI Funds Management Limited | SBI LARGE & MIDCAP FUND,Large & Mid Cap,164,0.000554737636747984,0.006679057724715998
+SBI Funds Management Limited | SBI Large Cap Fund,Large Cap,164,0.0006651761560758179,0.00801405587552173
+SBI Funds Management Limited | SBI MIDCAP FUND,Mid Cap,164,0.0007501254956500164,0.009042141337516574
+SBI Funds Management Limited | SBI MNC FUND,Sectoral/Thematic,164,0.0006352309999727481,0.007651899289344399
+SBI Funds Management Limited | SBI MultiCap Fund,Multi Cap,54,0.0007456880446843919,0.008988411867767443
+SBI Funds Management Limited | SBI PSU FUND,Sectoral/Thematic,164,0.0006603560435735809,0.007955752667868188
+SBI Funds Management Limited | SBI Quant Fund,Sectoral/Thematic,21,0.0009357099119462356,0.011291795373945535
+SBI Funds Management Limited | SBI SMALL CAP FUND,Small Cap,154,0.000902790664854344,0.010892382695400382
+SBI Funds Management Limited | SBI TECHNOLOGY OPPORTUNITIES FUND,Sectoral/Thematic,164,0.0008316666442541897,0.010029966011187774
+Sahara Asset Management Company Private Limited | SAHARA BANKING & FINANCIAL SERVICES FUND,Pre-2018 equity,86,0.0007615756123983952,0.009180794666747483
+Sahara Asset Management Company Private Limited | Sahara Growth Fund,Pre-2018 equity,86,0.0013747372537872653,0.016633671381239612
+Sahara Asset Management Company Private Limited | Sahara Infrastructure Fund - FIXED PRICING OPTION,Pre-2018 equity,86,0.0012733351107294497,0.015397357727117367
+Sahara Asset Management Company Private Limited | Sahara Infrastructure Fund - VARIABLE PRICING OPTION,Pre-2018 equity,86,0.00031785828994509464,0.003821583177391119
+Sahara Asset Management Company Private Limited | Sahara Midcap Fund,Pre-2018 equity,86,0.0008466185638326371,0.010211204911801719
+Sahara Asset Management Company Private Limited | Sahara Power and Natural Resources Fund,Pre-2018 equity,86,0.0009549946818900563,0.011525852810802206
+Sahara Asset Management Company Private Limited | Sahara R.E.A.L Fund,Pre-2018 equity,86,0.0012167633868972953,0.014708278301232003
+Sahara Asset Management Company Private Limited | Sahara Star Value Fund,Pre-2018 equity,86,0.0008538984983482385,0.01029946002371851
+Sahara Asset Management Company Private Limited | Sahara Super 20 Fund,Pre-2018 equity,86,0.001044040146568835,0.012607291966594714
+Sahara Asset Management Company Private Limited | Sahara Wealth Plus Fund - Fixed Pricing Option,Pre-2018 equity,86,0.0003361480298464371,0.004041922984217239
+Sahara Asset Management Company Private Limited | Sahara Wealth Plus Fund - Variable Pricing Option,Pre-2018 equity,86,0.00033255138453620783,0.003998589727267188
+Sahara Asset Management Company Private Limited | SaharaTax Gain,ELSS,86,0.0006041652278386777,0.007276327486736678
+Samco Asset Management Private Limited | Samco Active Momentum Fund,Sectoral/Thematic,38,0.0011614856544188616,0.014035412219952637
+Samco Asset Management Private Limited | Samco ELSS Tax Saver Fund,ELSS,45,0.0012014938060061408,0.014522365292997108
+Samco Asset Management Private Limited | Samco Flexi Cap Fund,Sectoral/Thematic,55,0.0012088267992346356,0.014611643048596745
+Samco Asset Management Private Limited | Samco Large & Mid Cap Fund,Large & Mid Cap,15,0.0013049735416419842,0.015782937867204083
+Samco Asset Management Private Limited | Samco Large Cap Fund,Large Cap,18,0.0013387528655033943,0.016194770860178842
+Samco Asset Management Private Limited | Samco Multi Cap Fund,Multi Cap,22,0.0013584821967713176,0.01643538546125023
+Samco Asset Management Private Limited | Samco Special Opportunities Fund,Sectoral/Thematic,27,0.0013165515241868693,0.01592407627705361
+Shriram Asset Management Co. Ltd. | Shriram ELSS Tax Saver Fund,ELSS,91,0.0014681070654412934,0.017773384483810828
+Shriram Asset Management Co. Ltd. | Shriram Flexi Cap Fund,Flexi Cap,95,0.0014641110202981273,0.017724580833270887
+Shriram Asset Management Co. Ltd. | Shriram Multi Sector Rotation Fund,Sectoral/Thematic,21,0.0014261146905518835,0.01726064902237434
+Sundaram Asset Management Company Ltd | Sundaram Business Cycle Fund,Sectoral/Thematic,27,0.0012924134643838136,0.015629849658166606
+Sundaram Asset Management Company Ltd | Sundaram Consumption Fund (Formerly Known as Sundaram Rural and Consumption Fund),Sectoral/Thematic,164,0.0006243901375023007,0.007520822027573315
+Sundaram Asset Management Company Ltd | Sundaram Dividend Yield Fund (Formerly Known as Principal Dividend Yield Fund),Dividend Yield,56,0.000978687132854029,0.011813480016423572
+Sundaram Asset Management Company Ltd | Sundaram ELSS Tax Saver Fund,ELSS,56,0.0004672819405385123,0.005623134086618631
+Sundaram Asset Management Company Ltd | Sundaram Financial Services Opportunities Fund,Sectoral/Thematic,164,0.0008306747511388173,0.010017943981500022
+Sundaram Asset Management Company Ltd | Sundaram Flexicap Fund,Flexi Cap,48,0.0012487244635222114,0.015097526969716224
+Sundaram Asset Management Company Ltd | Sundaram Focused Fund (Formerly Known as Principal Focused Multicap Fund),Focused,56,0.0008540080603391859,0.010300788309635323
+Sundaram Asset Management Company Ltd | Sundaram Infrastructure Advantage Fund (Erstwhile Sundaram Capex Opportunities),Sectoral/Thematic,149,0.000445982721281948,0.005366139079307164
+Sundaram Asset Management Company Ltd | Sundaram Large Cap Fund ( Formerly Know as Sundaram Blue Chip Fund),Large Cap,71,0.0011932966886732826,0.014422576294588874
+Sundaram Asset Management Company Ltd | Sundaram Large and Midcap Fund,Large & Mid Cap,164,0.0007766083872483475,0.009362860540014895
+Sundaram Asset Management Company Ltd | Sundaram Mid Cap Fund,Mid Cap,164,0.0005951684201230743,0.007167586099575907
+Sundaram Asset Management Company Ltd | Sundaram Multi Cap Fund (Formerly Known as Principal Multi Cap Growth Fund),Multi Cap,56,0.0009196290523555901,0.011096664905345888
+Sundaram Asset Management Company Ltd | Sundaram Multi-Factor Fund,Sectoral/Thematic,14,0.0013183099618987429,0.015945513773729436
+Sundaram Asset Management Company Ltd | Sundaram Services Fund,Sectoral/Thematic,96,0.0009653185080929191,0.011651174378679796
+Sundaram Asset Management Company Ltd | Sundaram Small Cap Fund,Small Cap,164,0.0006984612774834037,0.008416758737014085
+Sundaram Asset Management Company Ltd | Sundaram Value Fund,Value,164,0.0003859561157369624,0.004642215238847669
+Sundaram Mutual Fund | sundaram,Pre-2018 equity,43,0.000387731236688663,0.004663615804121113
+Sundaram Mutual Fund | sundaram entertainment opportunities,Pre-2018 equity,41,0.00032386227262168934,0.003893908911563937
+Sundaram Mutual Fund | sundaram equity,Multi Cap,27,0.001545540997453357,0.018719546346626315
+Sundaram Mutual Fund | sundaram select focus,Focused,106,0.0006302707467355036,0.00759192257121466
+Tata Asset Management Private Limited | TATA HOUSING OPPORTUNITIES FUND,Sectoral/Thematic,48,0.0013983446963125774,0.0169217136305555
+Tata Asset Management Private Limited | TATA MULTICAP FUND,Multi Cap,43,0.0011852199766455211,0.014324262670692534
+Tata Asset Management Private Limited | Tata Banking & Financial Services Fund,Sectoral/Thematic,129,0.0013118181893125936,0.0158663734095128
+Tata Asset Management Private Limited | Tata Business Cycle Fund,Sectoral/Thematic,61,0.0012983217481775196,0.015701859763447068
+Tata Asset Management Private Limited | Tata Digital India Fund,Sectoral/Thematic,129,0.0012963719605931727,0.0156780952069564
+Tata Asset Management Private Limited | Tata Dividend Yield Fund,Dividend Yield,64,0.00144004545575565,0.017430717868143875
+Tata Asset Management Private Limited | Tata ELSS - Tax Saver Fund,ELSS,143,0.001045128176990387,0.012620513023368973
+Tata Asset Management Private Limited | Tata Ethical Fund,Sectoral/Thematic,164,0.0008945041393712365,0.010791866267196193
+Tata Asset Management Private Limited | Tata Flexi Cap Fund,Flexi Cap,96,0.0012369973427442521,0.014954686964961716
+Tata Asset Management Private Limited | Tata Focused Fund,Focused,81,0.0013522051002955403,0.016358825189032533
+Tata Asset Management Private Limited | Tata India Consumer Fund,Sectoral/Thematic,129,0.0012028320287505157,0.01453865730665771
+Tata Asset Management Private Limited | Tata India Innovation Fund,Sectoral/Thematic,21,0.0012515367812328192,0.015131784868814835
+Tata Asset Management Private Limited | Tata India Pharma & Healthcare Fund,Sectoral/Thematic,129,0.00130337941118366,0.015763506566817354
+Tata Asset Management Private Limited | Tata Infrastructure Fund,Sectoral/Thematic,164,0.0005773600133198387,0.006952376494528512
+Tata Asset Management Private Limited | Tata Large & Mid Cap Fund,Large & Mid Cap,164,0.0008765974701789524,0.010574690614529425
+Tata Asset Management Private Limited | Tata Large Cap Fund,Large Cap,164,0.0009125497091727065,0.011010773750332215
+Tata Asset Management Private Limited | Tata Mid Cap Fund,Mid Cap,164,0.0008689783056438614,0.010482298020206393
+Tata Asset Management Private Limited | Tata Quant Fund,Sectoral/Thematic,61,0.0013601785628994958,0.016456076630560812
+Tata Asset Management Private Limited | Tata Resources & Energy Fund,Sectoral/Thematic,129,0.0013792453178555545,0.01668866946553038
+Tata Asset Management Private Limited | Tata Small Cap Fund,Small Cap,94,0.001385743132690912,0.01676794761293121
+Tata Asset Management Private Limited | Tata Value Fund,Value,164,0.0007935074894020827,0.009567569208755122
+Taurus Asset Management Company Limited | Taurus Banking & Financial Services Fund,Sectoral/Thematic,164,0.000732109397590793,0.008824016890904174
+Taurus Asset Management Company Limited | Taurus ELSS Tax Saver Fund,ELSS,164,0.0005096559976720202,0.006134612101652559
+Taurus Asset Management Company Limited | Taurus Ethical Fund,Sectoral/Thematic,164,0.0008270348468245585,0.009973828520902117
+Taurus Asset Management Company Limited | Taurus Flexi Cap Fund,Flexi Cap,164,0.0002450547895027271,0.0029449854485461557
+Taurus Asset Management Company Limited | Taurus Infrastructure Fund,Sectoral/Thematic,164,0.0004704975238438009,0.005661938814829348
+Taurus Asset Management Company Limited | Taurus Large Cap Fund,Large Cap,164,0.00035725531521690494,0.004296266386558223
+Taurus Asset Management Company Limited | Taurus Mid Cap Fund,Mid Cap,164,0.000367253914029266,0.0044167722812302745
+Trust Asset Management Private Limited | TRUSTMF Flexi Cap Fund,Flexi Cap,29,0.0013490169468908936,0.01631994223863975
+Trust Asset Management Private Limited | TRUSTMF MULTI CAP FUND,Multi Cap,14,0.0015374801813775728,0.018621010581624242
+Trust Asset Management Private Limited | TRUSTMF SMALL CAP FUND,Small Cap,22,0.0013190391316900676,0.0159544033739607
+UTI Asset Mgmt. Co. Ltd. | UTI - Banking and Financial Services Fund,Sectoral/Thematic,164,0.0008663938351706501,0.010450959766210577
+UTI Asset Mgmt. Co. Ltd. | UTI - Dividend Yield Fund,Dividend Yield,164,0.0005012536556561938,0.006033170570318935
+UTI Asset Mgmt. Co. Ltd. | UTI - Flexi Cap Fund.,Flexi Cap,164,0.0004711882499041714,0.0056702744922840775
+UTI Asset Mgmt. Co. Ltd. | UTI - Healthcare Fund,Sectoral/Thematic,164,0.0007996735133889472,0.009642272186620282
+UTI Asset Mgmt. Co. Ltd. | UTI - India Consumer Fund,Sectoral/Thematic,164,0.0005398447277813951,0.0064991652451455995
+UTI Asset Mgmt. Co. Ltd. | UTI - Infrastructure Fund,Sectoral/Thematic,164,0.00031605515292883207,0.0037998630781255205
+UTI Asset Mgmt. Co. Ltd. | UTI - Large Cap Fund,Large Cap,164,0.000616154914758528,0.007421261046434813
+UTI Asset Mgmt. Co. Ltd. | UTI - MNC Fund,Sectoral/Thematic,164,0.0007105405956744203,0.008562941174238503
+UTI Asset Mgmt. Co. Ltd. | UTI - Mid Cap Fund,Mid Cap,164,0.0007161542233831224,0.008630883825111901
+UTI Asset Mgmt. Co. Ltd. | UTI - Transportation and Logistics Fund,Sectoral/Thematic,164,0.0009044069208784946,0.010911989216374263
+UTI Asset Mgmt. Co. Ltd. | UTI ELSS Tax Saver Fund,ELSS,164,0.0007513915000465327,0.009057470875406315
+UTI Asset Mgmt. Co. Ltd. | UTI Focused Fund (30 stocks),Focused,61,0.0012297688314046938,0.01486665144564503
+UTI Asset Mgmt. Co. Ltd. | UTI Innovation Fund,Sectoral/Thematic,35,0.0011676469757749249,0.014110388568132182
+UTI Asset Mgmt. Co. Ltd. | UTI Large & Mid Cap Fund,Large & Mid Cap,164,0.00048335249005444097,0.005817083783735244
+UTI Asset Mgmt. Co. Ltd. | UTI Multi Cap Fund,Multi Cap,16,0.001238745555160537,0.014975979464932454
+UTI Asset Mgmt. Co. Ltd. | UTI Quant Fund,Sectoral/Thematic,20,0.0013547845553552949,0.016390285498902646
+UTI Asset Mgmt. Co. Ltd. | UTI Small Cap Fund,Small Cap,69,0.0012481903486654556,0.015091020846524028
+UTI Asset Mgmt. Co. Ltd. | UTI Value Fund,Value,164,0.0005925287805472951,0.007135683891803968
+UTI Mutual Fund | uti bluechip flexicap,Pre-2018 equity,63,0.0002790609533216227,0.0033543447050112807
+UTI Mutual Fund | uti contra,Pre-2018 equity,18,0.00033791653414124687,0.0040632310397523685
+UTI Mutual Fund | uti energy,Sectoral/Thematic,37,0.000343823423917512,0.004134404252206236
+UTI Mutual Fund | uti master plus unit,Pre-2018 equity,17,5.118699166260398e-05,0.0006144325863668421
+UTI Mutual Fund | uti master value,Pre-2018 equity,14,0.0005134563689122427,0.006180497368454274
+UTI Mutual Fund | uti multi cap,Pre-2018 equity,44,0.0004049873833018782,0.0048716768171812586
+UTI Mutual Fund | uti services industries,Sectoral/Thematic,18,0.00026623300703502734,0.0031999048845068323
+Unifi Asset Management Private Limited | UNIFI FLEXI CAP FUND,Flexi Cap,15,0.0010822067983960297,0.01307117214640785
+Union Asset Management Company Private Limited | Union Active Momentum Fund,Sectoral/Thematic,21,0.0011323486142555347,0.013680922309889931
+Union Asset Management Company Private Limited | Union Business Cycle Fund,Sectoral/Thematic,30,0.001095135942733737,0.013228362060987653
+Union Asset Management Company Private Limited | Union ELSS Tax Saver Fund (Formerly Union Tax Saver (ELSS) Fund,ELSS,164,0.00056880157326043,0.006848966506105558
+Union Asset Management Company Private Limited | Union Flexi Cap Fund,Flexi Cap,164,0.0007338379114726085,0.008844942303732672
+Union Asset Management Company Private Limited | Union Focused Fund,Focused,85,0.0007945298623246679,0.009579955139288554
+Union Asset Management Company Private Limited | Union Innovation & Opportunities Fund,Sectoral/Thematic,36,0.0012044400342653664,0.014558234100606526
+Union Asset Management Company Private Limited | Union Large & Midcap Fund,Large & Mid Cap,81,0.0010282103535526445,0.012414957868764454
+Union Asset Management Company Private Limited | Union Largecap Fund,Large Cap,112,0.0006248294681265624,0.007526133658595002
+Union Asset Management Company Private Limited | Union Midcap Fund,Mid Cap,78,0.0011429009412055088,0.01380929074741477
+Union Asset Management Company Private Limited | Union Multicap Fund,Multi Cap,45,0.0010397001857456304,0.012554557228089624
+Union Asset Management Company Private Limited | Union Small Cap Fund,Small Cap,147,0.0007654008365739402,0.009227119843243647
+Union Asset Management Company Private Limited | Union Value Fund,Value,93,0.0007957414750050794,0.009594633884504322
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Banking & Financial Services Fund,Sectoral/Thematic,31,0.0014244524052792814,0.017240357496013603
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Digital Bharat Fund,Sectoral/Thematic,23,0.0014451614811286221,0.017493182201953283
+WhiteOak Capital Asset Management Limited | WhiteOak Capital ELSS Tax Saver Fund,ELSS,47,0.0014204003744620974,0.01719089602721513
+WhiteOak Capital Asset Management Limited | WhiteOak Capital ESG Best-In-Class Strategy Fund,Sectoral/Thematic,23,0.0014334679338599207,0.01735041496346046
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Flexi Cap Fund,Flexi Cap,49,0.0011961481283587483,0.014457287665952334
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Large & Mid Cap Fund,Large & Mid Cap,33,0.001312972748360796,0.01588044803957067
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Large Cap Fund,Large Cap,45,0.001375226822877093,0.01663964394783779
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Mid Cap Fund,Mid Cap,48,0.0012732279006093569,0.015396051397485788
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Multi Cap Fund,Multi Cap,36,0.0012843316111214233,0.015531356377327166
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Pharma and Healthcare Fund,Sectoral/Thematic,31,0.0014435426783859669,0.01747341694488247
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Quality Equity Fund,Sectoral/Thematic,20,0.0014103853071413825,0.01706865654916112
+WhiteOak Capital Asset Management Limited | WhiteOak Capital Special Opportunities Fund,Sectoral/Thematic,27,0.0013325482431716226,0.016119112419581416
+quant Money Managers Limited | Quant ELSS Tax Saver Fund,ELSS,164,0.0007510250221591517,0.009053033318161985
+quant Money Managers Limited | Quant Flexi Cap Fund,Flexi Cap,164,0.0007252484378534559,0.008740962298412924
+quant Money Managers Limited | Quant Focused Fund,Focused,164,0.0007378884640094579,0.008893980048786831
+quant Money Managers Limited | Quant Infrastructure Fund,Sectoral/Thematic,164,0.000653389990585678,0.007871498511240249
+quant Money Managers Limited | Quant Large & Mid Cap Fund,Large & Mid Cap,164,0.0006417258259441606,0.0077304366345307685
+quant Money Managers Limited | Quant Mid Cap Fund,Mid Cap,164,0.0007770208778203681,0.00936785678434493
+quant Money Managers Limited | Quant Multi Cap Fund,Multi Cap,164,0.0006068732325645634,0.007309060527242561
+quant Money Managers Limited | Quant Small Cap Fund,Small Cap,164,0.0005680941553773285,0.006840419386810126
+quant Money Managers Limited | Quant Value Fund,Value,57,0.0013481623000684596,0.016309519156777696
+quant Money Managers Limited | quant BFSI Fund,Sectoral/Thematic,39,0.0013347225666634323,0.016145625225343796
+quant Money Managers Limited | quant Business Cycle Fund,Sectoral/Thematic,40,0.0012917473054363325,0.015621730839677106
+quant Money Managers Limited | quant Consumption Fund,Sectoral/Thematic,32,0.0012805788412182596,0.01548562474093762
+quant Money Managers Limited | quant ESG Integration Strategy Fund,Sectoral/Thematic,70,0.001291065838542297,0.015613425522598812
+quant Money Managers Limited | quant Healthcare Fund,Sectoral/Thematic,38,0.0013581010814485768,0.016430736922680378
+quant Money Managers Limited | quant Large Cap Fund,Large Cap,49,0.0012959728803707282,0.015673231174121227
+quant Money Managers Limited | quant Manufacturing Fund,Sectoral/Thematic,37,0.0012635255080891159,0.015277837026742569
+quant Money Managers Limited | quant Momentum Fund,Sectoral/Thematic,34,0.0010573118414517655,0.012768572989271476
+quant Money Managers Limited | quant PSU Fund,Sectoral/Thematic,31,0.001168818744469549,0.014124648302061171
+quant Money Managers Limited | quant Quantamental Fund,Sectoral/Thematic,64,0.0012457273161132296,0.015061018863167464
+quant Money Managers Limited | quant Teck Fund,Sectoral/Thematic,36,0.0013223195649517195,0.01599439740854791
