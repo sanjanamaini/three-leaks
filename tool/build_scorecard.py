@@ -170,7 +170,17 @@ def main() -> None:
     out.parent.mkdir(exist_ok=True)
     out.write_text(page)
     df.to_csv(TABLES / "scorecard.csv", index=False)
+    counts = df["verdict"].value_counts()
+    numbers = {"card_funds": n, "card_commission_median": float(df["commission"].median()),
+               "card_commission_p90": float(df["commission"].quantile(0.9)),
+               "card_skill": int(counts.get("Evidence of skill", 0)),
+               "card_under": int(counts.get("Evidence of underperformance", 0)),
+               "card_luck": int(counts.get("Indistinguishable from luck", 0)),
+               "card_sector": int(counts.get("No verdict (sector fund)", 0)),
+               "card_short": int(counts.get("Too little history", 0))}
+    (TABLES / "scorecard_numbers.json").write_text(json.dumps(numbers, indent=1))
     print("scorecard: %d funds -> %s" % (n, out))
+    print(json.dumps(numbers, indent=1))
 
 
 if __name__ == "__main__":

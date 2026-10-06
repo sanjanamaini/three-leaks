@@ -109,7 +109,7 @@ def main() -> None:
     colors = ["#1F3A5F" if v >= 0 else "#2E7D4F" for v in vals]
     ax.barh(["Skill", "Commission", "Timing"], vals, color=colors)
     ax.axvline(0, color="#999", lw=1)
-    ax.set_xlabel("Percentage points a year lost (positive) or gained (negative), 2019-05 to 2025-12")
+    ax.set_xlabel("Points a year lost (bars right) or gained (bars left)\nby the investor, 2019-05 to 2025-12", fontsize=8)
     fig.tight_layout()
     fig.savefig(FIGURES / "synthesis_leaks.png", dpi=200)
     plt.close(fig)

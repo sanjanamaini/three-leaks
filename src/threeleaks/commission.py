@@ -114,9 +114,11 @@ def main() -> None:
     m = p.groupby("month")["gap_log"].median().rolling(12).mean()
     fig, ax = plt.subplots(figsize=(6.4, 3.6))
     ax.plot(m.index.to_timestamp(), (np.exp(12 * m) - 1) * 100, color="#1F3A5F")
-    for e, lab in [(UPFRONT_BAN_EVENT, "upfront commissions banned"), (TER_EVENT, "TER cut")]:
+    y0, y1 = ax.get_ylim()
+    for e, lab, ha, frac in [(UPFRONT_BAN_EVENT, "upfront commissions banned ", "right", 0.97),
+                             (TER_EVENT, " TER cut (April 2019)", "left", 0.87)]:
         ax.axvline(pd.Timestamp(e), color="#B33", lw=1, ls="--")
-        ax.text(pd.Timestamp(e), ax.get_ylim()[1] * 0.97, " " + lab, color="#B33", fontsize=7, va="top")
+        ax.text(pd.Timestamp(e), y0 + (y1 - y0) * frac, lab, color="#B33", fontsize=7, va="top", ha=ha)
     ax.set_ylabel("Median twin gap, % a year (12-month avg)")
     fig.tight_layout()
     fig.savefig(FIGURES / "commission_over_time.png", dpi=200)
@@ -146,6 +148,8 @@ def main() -> None:
     sec = ev[ev["kind"] == "secondary"].iloc[0]
     numbers["commission_upfront_change"] = float(sec["change_mean"])
     numbers["commission_upfront_p"] = float(sec["p_t"])
+    for yr, row in by_year.iterrows():  # median twin gap by calendar year (years with partial data are labelled in the report)
+        numbers["commission_year_%d_median" % yr] = float(row["median"])
     (TABLES / "commission_numbers.json").write_text(json.dumps(numbers, indent=1))
     print(json.dumps(numbers, indent=1))
     print(by_cat.to_string())

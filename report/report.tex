@@ -15,14 +15,17 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{caption}
+\usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \definecolor{accent}{HTML}{1F3A5F}
+\definecolor{soft}{HTML}{EEF1F5}
 \titleformat{\section}{\sffamily\color{accent}\large\bfseries}{\thesection}{0.6em}{}
 \titleformat{\subsection}{\sffamily\color{accent}\bfseries}{\thesubsection}{0.6em}{}
 \captionsetup{font=small,labelfont={bf,sf}}
 \setlist{itemsep=2pt,topsep=3pt}
 \graphicspath{{../results/figures/}}
 \input{numbers.tex}
+\newcommand{\inbrief}[1]{\noindent\colorbox{soft}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small #1}}}
 
 \title{\sffamily\color{accent}\textbf{The Three Leaks}\\[4pt]\large Where Indian equity mutual fund investors lose their returns, and whether it can be avoided}
 \author{Sanjana Maini}
@@ -32,7 +35,7 @@
 \maketitle
 
 \begin{abstract}
-% RESULT: abstract written after the full run.
+An investor in an actively managed Indian equity fund can trail a cheap alternative in three places: the distributor commission inside a regular plan, the manager's skill (or luck) after fees, and the investor's own timing. This report measures all three on one survivorship-free dataset (every scheme in AMFI's NAV history, 2006 to 2026), with every test pre-registered. The commission leak is universal: in all \CommissionPairs{} twin pairs, the direct plan beat the regular plan of the same fund, by a median \CommissionGapMedian{} a year, and the gap widened from \CommissionYearTwoZeroOneThreeMedian{} in 2013 to \CommissionYearTwoZeroTwoFiveMedian{} in 2025. Skill is real but thinly spread: after a false-discovery correction, about \SkillRegPiPlus{} of regular plans and \SkillDirPiPlus{} of direct plans have truly positive four-factor alpha, almost none negative, and the best funds beat luck in a bootstrap. Against index funds an investor can buy, though, the median regular plan's edge (\StyleRegMedianAlpha{} a year) is mostly consumed by the commission. Investors' money-weighted return trails their funds by \TimingGap{} a year (2019 to 2026), but within each year their timing is no worse than random: most of the gap reflects money arriving later, not panic. Out of sample (2014 to 2025), simple rules and gradient-boosted trees picked direct plans that beat the average fund (trees: \SelDirGbtVsall{} a year, $t$ = \SelDirGbtVsallT), though the edge halved after 2019. Over 2019 to 2025 the commission is the largest leak, about Rs \SynRsCommissionLowCr{} to \SynRsCommissionHighCr{} a year at 2025 assets. A scorecard of all \CardFunds{} live funds turns the results into a tool.
 \end{abstract}
 
 \section{Introduction}
@@ -44,7 +47,7 @@ India also offers a design most markets do not. Since January 2013 every mutual 
 
 This report measures all three leaks on one open, survivorship-free dataset, tests whether any of them could have been avoided in advance, and turns the results into a scorecard an investor or a platform can use. Everything was pre-registered before any return statistic was computed (Section~\ref{sec:data}), and every number in this report is written by the pipeline from public data.
 
-% RESULT: summary of findings paragraph.
+\paragraph{What we find.} The commission leak is universal and growing: every twin pair shows it, and the median gap more than doubled between 2013 and 2025; SEBI's 2019 expense-ratio cut narrowed it only briefly. The skill leak is smaller than the common view suggests: roughly three in ten regular plans and six in ten direct plans have truly positive alpha against the factor model, and past winners keep a modest edge. But against investable index funds, most of a regular plan's edge goes to the commission. The timing leak is mostly not timing: money arrived later in the period, after the strongest returns, while month-to-month timing was no worse than chance. Some of the leaks could have been avoided: rules built only from past data picked direct plans that beat the average fund, by less after 2019 than before. Put together over 2019 to 2025, the commission costs investors the most.
 
 \section{Data and design}\label{sec:data}
 \paragraph{Funds.} Month-end net asset values (NAVs) of every scheme in the Association of Mutual Funds in India (AMFI) NAV history, alive or dead, from April 2006 to September 2026. The universe is open-ended, actively managed equity schemes, growth options only. Excluded: index funds and ETFs (used as benchmarks), fund-of-funds, hybrid, arbitrage, solution-oriented, overseas and commodity schemes, and dividend options. Dead and merged schemes stay in the sample for the months they existed, so the sample is free of survivorship bias. AMFI labels each scheme with its current category, so live funds carry SEBI's 2017 categories throughout; funds that closed earlier keep the older labels.
@@ -55,41 +58,168 @@ This report measures all three leaks on one open, survivorship-free dataset, tes
 
 \paragraph{Flows.} AMFI's monthly reports give each category's gross sales, redemptions, net flows and month-end assets under management (AUM). The timing analysis starts in April 2019, the first month of AMFI's consistent category layout.
 
-\paragraph{Pre-registration.} Hypotheses, tests and what counts as a null result were committed to the repository (\texttt{PREREGISTRATION.md}) before any return statistic was computed. Every later clarification or addition, with its date and reason, is in \texttt{DEVIATIONS.md}. Additions are reported alongside the registered analyses, never instead of them.
+\paragraph{Pre-registration.} Hypotheses, tests and what counts as a null result were committed to the repository (\texttt{PREREGISTRATION.md}) before any return statistic was computed. Every later clarification or addition, with its date and reason, is in \texttt{DEVIATIONS.md}. Additions are reported alongside the registered analyses, never instead of them; the ones added after results had been seen are marked so.
 
-% RESULT: data quality numbers (schemes, twins, validation against mfapi).
+\paragraph{The data in numbers.} The NAV history covers \DqSchemeCodesAll{} scheme codes of every kind over \DqNavMonths{} months and yields \DqReturnsTotal{} monthly returns, of which \DqReturnsFlaggedAsErrors{} (moves above $+100\%$ or below $-60\%$ in a month) are treated as recording errors. The active equity universe holds \DqOpenEquityGrowthCodes{} open-ended growth codes. \DqTwinsAccepted{} twin pairs pass the correlation rule and \DqTwinsRejectedLowCorr{} fails it. An independent check against mfapi.in, a separate mirror of AMFI data, matched all \ValidateNavsMatched{} month-end NAVs of \ValidateSchemes{} randomly drawn schemes (\ValidateMatchShare). One error was found and fixed before the results were written: Quantum Mutual Fund sold only direct plans before SEBI's 2013 rule, and AMFI kept those codes as ``Direct Plan'', so the code's direct-plan universe briefly reached back to 2006. Direct plans now start in January 2013, as registered, and everything was rerun.
 
 \section{Leak 1: the commission}
-% RESULT
+\textbf{The gap is universal.} In all \CommissionPairs{} twin pairs with at least a year of overlap, the direct plan earned more than the regular plan of the same fund (\CommissionSharePositive{} of pairs; Wilcoxon $p$ \CommissionWilcoxonP). The median gap over each pair's whole history is \CommissionGapMedian{} a year, with the middle half of pairs between \CommissionGapPTwoFive{} and \CommissionGapPSevenFive{} (Figure~\ref{fig:comm}). The gap is largest in small-cap and multi-cap funds and smallest in value funds and in funds that closed before 2018 (Table~\ref{tab:commcat}).
+
+\textbf{The gap has widened.} The median yearly gap rose from \CommissionYearTwoZeroOneThreeMedian{} in 2013 to \CommissionYearTwoZeroOneEightMedian{} in 2018, dipped to \CommissionYearTwoZeroOneNineMedian{} in 2019, and climbed again to \CommissionYearTwoZeroTwoFiveMedian{} in 2025. Because the two plans hold the same portfolio, a wider return gap means a wider gap between their expense ratios.
+
+\textbf{The 2019 expense-ratio cut narrowed it, briefly.} SEBI's cap on total expense ratios from 1 April 2019 is the registered natural experiment (Table~\ref{tab:events}). Within the \CommissionTerPairs{} pairs present for the full two years around it, the gap fell from \CommissionTerBefore{} to \CommissionTerAfter{} (change \CommissionTerChange; $p$ \CommissionTerP), and \CommissionTerShareNarrowed{} of pairs narrowed. The 2016 placebo shows a small widening (\CommissionPlaceboTwoZeroOneSixChange, $p$ = \CommissionPlaceboTwoZeroOneSixP), in line with the long upward trend, and the 2022 placebo shows nothing (\CommissionPlaceboTwoZeroTwoTwoChange, $p$ = \CommissionPlaceboTwoZeroTwoTwoP). Because the placebos move the other way or not at all, the 2019 narrowing reads as an effect of the rule, not a trend; but the yearly median was back above its 2018 level by 2020 (\CommissionYearTwoZeroTwoZeroMedian{} against \CommissionYearTwoZeroOneEightMedian). The October 2018 ban on upfront commissions, the secondary event, overlaps the same window and shows a similar narrowing (\CommissionUpfrontChange, $p$ \CommissionUpfrontP), so the two cannot be separated.
+
+\textbf{In rupees.} Over 2019-05 to 2025-12 the twin gap averaged \SynCommission{} a year. Applied to 2025's average active equity AUM of Rs \SynAumTwoZeroTwoFiveCr, with regular plans holding \SynRegShare{} of it (AMFI's March 2025 share of SIP assets, AMFI and Crisil 2025, used as an assumption), the commission leak is about Rs \SynRsCommissionCr{} a year, with a range of Rs \SynRsCommissionLowCr{} to \SynRsCommissionHighCr{} for regular shares of 60\% to 88\%. As an independent anchor, AMFI's FY 2024-25 disclosure shows its top \ExtDistributorsParsed{} distributors were paid Rs \ExtCommissionTotalCr{} across all fund types, \ExtCommissionRate{} of the Rs \ExtDistributorAumCr{} they serviced. Because that total covers debt and hybrid funds too, it suggests the lower end of our range is the more plausible one, and that the twin gap may include costs other than commission.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.49\linewidth]{commission_hist.png}\hfill
+\includegraphics[width=0.49\linewidth]{commission_over_time.png}
+\caption{Left: the direct-minus-regular gap of every twin pair over its whole history; none is below zero. Right: the median gap, 12-month average, with the two regulatory events.}\label{fig:comm}
+\end{figure}
+
+\begin{table}[htbp]\centering
+\caption{The twin gap by category, \% a year.}\label{tab:commcat}
+{\small\input{tables/commission_by_category.tex}}
+\end{table}
+
+\begin{table}[htbp]\centering
+\caption{Event tests: within-pair change in the annualised gap, 12 months after minus 12 months before.}\label{tab:events}
+{\small\input{tables/commission_events.tex}}
+\end{table}
 
 \section{Leak 2: skill, luck and the benchmark}
-% RESULT
+\textbf{Is the yardstick fair?} If the four-factor model misprices Indian indices, every fund's alpha would carry the error. Index funds give a test: they should show about zero alpha. They do (Table~\ref{tab:calib}): Nifty 50 funds \CalibNiftyFiveZeroAlpha{} a year ($t$ = \CalibNiftyFiveZeroT) and Sensex funds \CalibSensexAlpha{} ($t$ = \CalibSensexT). The mid- and small-cap index series are too short to judge (\CalibMidcapOneFiveZeroMonths{} and \CalibSmallcapTwoFiveZeroMonths{} months; neither significant).
+
+\textbf{How many funds have real skill?} Regular plans, the version most investors hold, earned a mean four-factor alpha of \SkillRegMeanAlpha{} a year after all fees (\SkillRegFunds{} diversified funds, 2006 to 2025); \SkillRegSharePosAlpha{} were positive. Many positive alphas are luck, so the Barras, Scaillet and Wermers (2010) false discovery method, with Newey and West (1987) $t$-statistics, per-fund bootstrap p-values (Kosowski et al.\ 2006) and Storey's (2002) estimate of the null share, estimates the shares of funds with truly zero, positive and negative alpha (Table~\ref{tab:fdr}). For regular plans, \SkillRegPiPlus{} have truly positive alpha (95\% interval \SkillRegPiPlusLo{} to \SkillRegPiPlusHi), \SkillRegPiZero{} have zero, and essentially none have negative alpha (upper bound \SkillRegPiMinusHi). Direct plans, closer to the manager's gross skill, do better: \SkillDirPiPlus{} have truly positive alpha (\SkillDirPiPlusLo{} to \SkillDirPiPlusHi). The registered hypothesis that fewer than 10\% of funds have positive alpha is rejected. Requiring 60 months of history gives the same picture (\SkillRegMinSixZeroPiPlus{} and \SkillDirMinSixZeroPiPlus).
+
+\textbf{Do the best funds beat luck?} The Fama and French (2010) bootstrap builds a world in which every fund has zero true alpha and compares the actual distribution of $t$-statistics with it (Table~\ref{tab:ff}, Figure~\ref{fig:ff}). Above the 10th percentile, actual $t$-statistics beat the zero-alpha world in most simulations; at the 99th percentile the actual value of \SkillFfRegPNineNineT{} exceeds \SkillFfRegPNineNineShareBelow{} of simulations. At the bottom, the worst funds are no worse than bad luck.
+
+\textbf{Against what an investor can actually buy.} Following Berk and van Binsbergen (2015), skill is also measured against alternatives an investor could hold. Against index funds (Sharpe 1992 style analysis on Nifty 50, Next 50, Midcap 150 and Smallcap 250 index funds, \StyleStart{} to \StyleEnd, \StyleMonths{} months, \StyleDirFunds{} funds), the median direct plan earned \StyleDirMedianAlpha{} a year and the median regular plan \StyleRegMedianAlpha. \StyleDirShareSigPos{} of direct plans but only \StyleRegShareSigPos{} of regular plans are significantly ahead. Against an investable benchmark, the commission eats most of the edge.
+
+\textbf{Does skill persist?} Funds sorted each December on their prior 36-month alpha $t$-statistic (Carhart 1997) keep their order a year later (Table~\ref{tab:persist}): the top quintile earns \SkillPersistTopAlpha{} next year ($t$ = \SkillPersistTopT), the bottom \SkillPersistBottomAlpha, a spread of \SkillPersistSpreadAlpha{} ($t$ = \SkillPersistSpreadT).
+
+\textbf{Discounting luck fund by fund.} An empirical-Bayes shrinkage pulls each fund's alpha toward the average, more when the estimate is noisy. The spread of true alphas across regular plans is \SkillRegEbTau{} a year, and \SkillRegEbShareProbNineZero{} of regular plans have at least a 90\% chance that their true alpha is positive. Out of sample (estimated 2013 to 2019, realised 2020 to 2025, \SkillDirOosFunds{} funds), shrinkage cut the prediction error (mean squared error \SkillDirOosMseRaw{} to \SkillDirOosMseShrunk) without changing the rank correlation (\SkillDirOosRhoRaw); but those funds' realised alpha averaged only \SkillDirOosMeanLaterAlpha{} (Section~\ref{sec:decay}).
+
+\textbf{Survivorship matters.} Regular plans still alive earned \SkillRegAlphaAlive{} a year against \SkillRegAlphaDead{} for the \SkillRegDeadFunds{} that closed. A study of today's fund list would report an average alpha of \SkillRegAlphaAlive{} instead of \SkillRegAlphaAll{} for all regular plans.
+
+\begin{table}[htbp]\centering
+\caption{Calibration: index funds' own four-factor alpha.}\label{tab:calib}
+{\small\input{tables/calibration.tex}}
+\end{table}
+
+\begin{table}[htbp]\centering
+\caption{Skill and luck by the false discovery method: estimated shares of funds with truly zero ($\hat\pi_0$), positive ($\hat\pi^+$) and negative ($\hat\pi^-$) alpha, \%, with bootstrap intervals.}\label{tab:fdr}
+{\small\input{tables/skill_fdr.tex}}
+\end{table}
+
+\begin{table}[htbp]\centering
+\caption{Fama-French bootstrap, regular plans: actual $t(\alpha)$ at each percentile against a world where every fund's true alpha is zero.}\label{tab:ff}
+{\small\input{tables/skill_ff.tex}}
+\end{table}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\linewidth]{skill_ff_bootstrap.png}
+\caption{Actual $t(\alpha)$ percentiles against the zero-alpha world. Points above the dashed line are better than luck alone.}\label{fig:ff}
+\end{figure}
+
+\begin{table}[htbp]\centering
+\caption{Persistence: next-year alpha of quintiles sorted on prior 36-month $t(\alpha)$.}\label{tab:persist}
+{\small\input{tables/skill_persistence.tex}}
+\end{table}
 
 \section{Leak 3: timing}
-% RESULT
+Across all active equity funds from \TimingStart{} to \TimingEnd{} (\TimingMonths{} months), the funds earned a time-weighted \TimingTwr{} a year and their investors a money-weighted \TimingMwr: a gap of \TimingGap{} (Table~\ref{tab:timing}). The time-weighted series built from AUM and flows tracks NAV-based category returns closely (correlation \TimingNavCorr).
+
+\textbf{Is it bad timing?} The registered test places the same flows in random months, holding the return path fixed. Investors did worse than that (permuted gap \TimingVsRandom; $p$ \TimingPWorseRandom). But net inflows rose steeply over the period as SIP contributions grew (Rs \TimingTotalInflowCr{} in total, against average assets of Rs \TimingAvgAumCr), and shuffling across years moves today's large flows into early months that preceded the strongest returns. The added test, logged before results, shuffles flows only within each calendar year. Against it, investors' timing is no worse than random (\TimingVsRandomWithinYear; $p$ = \TimingPWorseRandomWithinYear). Flows also lean against recent returns: net flows as a share of assets fall after strong quarters (coefficient \TimingChasePastCoef, $t$ = \TimingChasePastT), the opposite of return-chasing. So most of the measured gap is money arriving later, after the best returns, not panic selling.
+
+By category the gap is largest in small-cap funds (\TimingCatSmallCapGap) and absent in tax-saving ELSS funds (\TimingCatElssGap), whose flows follow the tax calendar and are locked in for three years.
+
+\begin{table}[htbp]\centering
+\caption{Time-weighted (funds) against money-weighted (investors) returns, \% a year, with the registered and the within-year permutation tests.}\label{tab:timing}
+{\small\input{tables/timing.tex}}
+\end{table}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\linewidth]{timing_flows.png}
+\caption{Active equity funds' return index (line) and monthly net inflows (bars). Flows grew most in the later years, after the steep gains of 2020 and 2021.}
+\end{figure}
 
 \section{Could the leaks have been avoided?}
-% RESULT
+Each December from 2013 to 2024, four registered rules picked funds using only information available on that day, held for a year: the lowest R-squared quintile (Amihud and Goyenko 2013), the highest prior-alpha quintile, ridge regression and gradient-boosted trees (Friedman 2001) trained on earlier years only (\SelFeatureRows{} fund-years of features). Out of sample (\SelYearsDirect), on direct plans (Table~\ref{tab:sel}, Figure~\ref{fig:sel}):
+\begin{itemize}[leftmargin=1.2em]
+\item The average active direct plan already earned \SelDirAllFundsAlpha{} a year of alpha ($t$ = \SelDirAllFundsT), against \SelDirNiftyFiveZeroIndexAlpha{} for Nifty 50 index funds ($t$ = \SelDirNiftyFiveZeroIndexT).
+\item All four rules have significant alpha after the Holm (1979) correction, so the registered null is rejected. The trees did best: \SelDirGbtAlpha{} ($t$ = \SelDirGbtT, Holm $p$ = \SelDirGbtPholm).
+\item What matters is the edge over simply holding every fund: trees \SelDirGbtVsall{} a year ($t$ = \SelDirGbtVsallT), high prior alpha \SelDirHighAlphaVsall{} ($t$ = \SelDirHighAlphaVsallT), ridge \SelDirRidgeVsall{} ($t$ = \SelDirRidgeVsallT), low R-squared \SelDirLowRTwoVsall{} ($t$ = \SelDirLowRTwoVsallT, not significant).
+\item On regular plans the ranking holds (trees \SelRegGbtAlpha{} of alpha, \SelRegGbtVsall{} over all funds, $t$ = \SelRegGbtVsallT).
+\end{itemize}
+The edge was not stable over time. From 2014 to 2019 the trees beat all funds by \DecaySelGbtTwoZeroOneFourVsall{} ($t$ = \DecaySelGbtTwoZeroOneFourVsallT); from 2020 to 2025 by \DecaySelGbtTwoZeroTwoZeroVsall{} ($t$ = \DecaySelGbtTwoZeroTwoZeroVsallT). Only the high-prior-alpha rule stays significant in the later period (\DecaySelHighAlphaTwoZeroTwoZeroVsall, $t$ = \DecaySelHighAlphaTwoZeroTwoZeroVsallT).
+
+\begin{table}[htbp]\centering
+\caption{Out-of-sample fund selection, direct plans, \% a year.}\label{tab:sel}
+{\small\input{tables/selection.tex}}
+\end{table}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\linewidth]{selection_growth.png}
+\caption{Growth of Rs 1 in each strategy's direct-plan picks, 2014 to 2025.}\label{fig:sel}
+\end{figure}
+
+\section{Exploratory: is the active edge fading?}\label{sec:decay}
+This section was added after the main results (\texttt{DEVIATIONS.md}); it is exploratory. The rolling 36-month alpha of the average direct plan peaked at \DecayDirRollingMax{} in the window ending \DecayDirRollingMaxMonth, turned negative in 2022, and recovered to \DecayDirRollingLast{} in the latest window (Figure~\ref{fig:decay}). Year by year, with factor betas from the whole period, the average direct plan earned \DecayYearTwoZeroOneNineDir{} beyond the factors in 2019, \DecayYearTwoZeroTwoZeroDir{} in 2020, \DecayYearTwoZeroTwoOneDir{} in 2021, then \DecayYearTwoZeroTwoFourDir{} and \DecayYearTwoZeroTwoFiveDir{} in 2024 and 2025. Its alpha over 2013 to 2025 is \DecayDirAlphaFull{} ($t$ = \DecayDirAlphaFullT), and \DecayDirAlphaExTwoZeroTwoZero{} without 2020 ($t$ = \DecayDirAlphaExTwoZeroTwoZeroT).
+
+The weaker period is also concentrated in older funds. Over 2020 to 2025, the \DecayOldFunds{} funds with three or more years of direct-plan history before 2020 earned \DecayOldAlpha{} a year, against \DecayNewAlpha{} for the \DecayNewFunds{} newer ones ($p$ \DecayOldnewP). This fits the idea that larger, older funds find it harder to beat the market, though age and size are not separated here.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\linewidth]{decay_rolling_alpha.png}
+\caption{Rolling 36-month four-factor alpha of the average active fund.}\label{fig:decay}
+\end{figure}
 
 \section{Exploratory: did SEBI's categorisation create closet index funds?}
-% RESULT
+SEBI's 2017 circular required large-cap funds to hold at least 80\% in the 100 largest stocks from mid-2018. If that squeezed out active bets, large-cap funds' tracking error against a Nifty 50 index fund should fall relative to mid-cap funds. It did not. Over the two years after mid-2018, large-cap funds' tracking error went from \ClosetAfterLargeTeBefore{} to \ClosetAfterLargeTePost{} a year (\ClosetAfterLargeN{} funds), mid-cap funds' from \ClosetAfterControlTeBefore{} to \ClosetAfterControlTePost{} (\ClosetAfterControlN{} funds): a difference-in-differences of \ClosetAfterDidTe{} ($p$ = \ClosetAfterDidP), the opposite sign to closet indexing. A later window (2022 to 2024) gives \ClosetLaterDidTe{} ($p$ = \ClosetLaterDidP). This null is reported as found.
 
 \section{The three leaks together}
-% RESULT
+On the one window where twin plans, consistent flow data and the factors all exist (\SynWindow, \SynMonths{} months), the leaks can be set side by side (Table~\ref{tab:syn}, Figure~\ref{fig:syn}). Direct plans returned \SynRetDirect{} a year, regular plans \SynRetRegular, the IIMA market portfolio (a fee-free benchmark of all listed Indian stocks) \SynRetMarket{} and Nifty 50 index funds \SynRetNiftyFiveZero.
+\begin{itemize}[leftmargin=1.2em]
+\item \textbf{Skill} was a gain, not a leak: direct plans beat the market portfolio, so the skill leak is negative, \SynSkillVsMarket{} a year (Rs \SynRsSkillCr{} at 2025 assets). Measured against Nifty 50 index funds it is \SynSkillVsNiftyFiveZero, mostly because mid- and small-cap stocks beat large caps in this window, which is style, not skill.
+\item \textbf{Commission} cost \SynCommission{} a year, Rs \SynRsCommissionCr.
+\item \textbf{Timing} cost \SynTiming{} a year on this window, Rs \SynRsTimingCr, mostly the late arrival of money rather than bad month-to-month timing.
+\end{itemize}
+The pieces are measured on their natural bases (equal-weighted funds for skill and commission, AUM for timing), so they add up only approximately.
+
+\begin{table}[htbp]\centering
+\caption{The three leaks on one window, points a year and Rs crore a year at 2025 assets. Negative means a gain to investors.}\label{tab:syn}
+{\small\input{tables/synthesis.tex}}
+\end{table}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\linewidth]{synthesis_leaks.png}
+\caption{The three leaks, \SynWindow.}\label{fig:syn}
+\end{figure}
 
 \section{Deployment}
-% RESULT
+\paragraph{The scorecard.} \texttt{docs/index.html} is a single offline page covering all \CardFunds{} live active equity funds with both plans. For each it shows the yearly cost of the regular plan over the last 36 months (median \CardCommissionMedian, one in ten above \CardCommissionPNineZero), the direct plan's alpha with its false-discovery $q$-value, the empirical-Bayes expected alpha and the chance it is positive, R-squared, a verdict and the cheaper index alternative. The verdict rule was fixed before any fund's result was read: $q \le 0.10$ with a positive $t$ is ``evidence of skill'', with a negative $t$ ``evidence of underperformance'', otherwise ``indistinguishable from luck''. Of the funds, \CardSkill{} show evidence of skill, \CardUnder{} show evidence of underperformance and \CardLuck{} are indistinguishable from luck; \CardSector{} sector funds get no verdict, because the market factors are not their benchmark, and \CardShort{} have too little history.
+
+\paragraph{What it means for investors and platforms.} Choosing the direct plan of the same fund is the one free improvement available to every investor, worth about \CardCommissionMedian{} a year at the median. Fund selection on past evidence helped, but by less after 2019, so the scorecard shows uncertainty (the $q$-value and the chance of positive alpha), not rankings.
+
+\paragraph{Disclosure ideas for SEBI.} Show each regular plan's realised return gap to its direct twin, in rupees on the investor's own holding, on every account statement; and publish both plans' returns side by side in every factsheet.
 
 \section{Limitations}
-% RESULT
+\begin{itemize}[leftmargin=1.2em]
+\item Regular plans' share of equity assets is borrowed from AMFI's figure for SIP assets, so the rupee estimates carry that assumption (hence the range).
+\item The four-factor model is fair for large-cap indices; the mid- and small-cap index series are too short to confirm it there. Investable-benchmark results cover only 2021 onwards.
+\item Scheme-wise AUM is not published at a fixed address, so funds are equal-weighted; timing is measured on AMFI's aggregates, not individual accounts.
+\item The selection results hold for this period and these rules; the edge weakened after 2019.
+\item The decay and closet-indexing sections are exploratory and were not pre-registered.
+\end{itemize}
 
 \section{Reproducibility}
-Every number in this report is written by the pipeline into \texttt{results/numbers.json} and \texttt{report/numbers.tex}; none is typed by hand. \texttt{make all} downloads the raw data from AMFI and IIMA, rebuilds every panel, reruns every analysis with fixed random seeds, and recompiles this report. Raw data is not redistributed; the download scripts fetch it from the publishers.
+Every number in this report is written by the pipeline into \nolinkurl{results/numbers.json} and \nolinkurl{report/numbers.tex}; none is typed by hand. \texttt{make all} downloads the raw data from AMFI and IIMA, rebuilds every panel, reruns every analysis with fixed random seeds, and recompiles this report. A full rerun from the downloaded files reproduces every number exactly. Raw data is not redistributed; the download scripts fetch it from the publishers.
 
 \section*{References}
 \begin{small}
 \begin{itemize}[leftmargin=1em,label={}]
 \item Agarwalla, S. K., Jacob, J. and Varma, J. R. (2013). Four factor model in Indian equities market. IIMA Working Paper 2013-09-05.
+\item AMFI and Crisil (2025). \textit{AMFI Annual Report FY 2025}. Association of Mutual Funds in India.
 \item Amihud, Y. and Goyenko, R. (2013). Mutual fund's $R^2$ as predictor of performance. \textit{Review of Financial Studies} 26(3).
 \item Barras, L., Scaillet, O. and Wermers, R. (2010). False discoveries in mutual fund performance: measuring luck in estimated alphas. \textit{Journal of Finance} 65(1).
 \item Bergstresser, D., Chalmers, J. and Tufano, P. (2009). Assessing the costs and benefits of brokers in the mutual fund industry. \textit{Review of Financial Studies} 22(10).
@@ -98,8 +228,11 @@ Every number in this report is written by the pipeline into \texttt{results/numb
 \item DeMiguel, V., Gil-Bazo, J., Nogales, F. J. and Santos, A. A. P. (2023). Machine learning and fund characteristics help to select mutual funds with positive alpha. \textit{Journal of Financial Economics} 150(3).
 \item Dichev, I. D. (2007). What are stock investors' actual historical returns? \textit{American Economic Review} 97(1).
 \item Fama, E. F. and French, K. R. (2010). Luck versus skill in the cross-section of mutual fund returns. \textit{Journal of Finance} 65(5).
+\item Friedman, J. H. (2001). Greedy function approximation: a gradient boosting machine. \textit{Annals of Statistics} 29(5).
 \item Friesen, G. C. and Sapp, T. R. A. (2007). Mutual fund flows and investor returns: an empirical examination of fund investor timing ability. \textit{Journal of Banking and Finance} 31(9).
+\item Holm, S. (1979). A simple sequentially rejective multiple test procedure. \textit{Scandinavian Journal of Statistics} 6(2).
 \item Kosowski, R., Timmermann, A., Wermers, R. and White, H. (2006). Can mutual fund ``stars'' really pick stocks? \textit{Journal of Finance} 61(6).
+\item Newey, W. K. and West, K. D. (1987). A simple, positive semi-definite, heteroskedasticity and autocorrelation consistent covariance matrix. \textit{Econometrica} 55(3).
 \item Sharpe, W. F. (1992). Asset allocation: management style and performance measurement. \textit{Journal of Portfolio Management} 18(2).
 \item Storey, J. D. (2002). A direct approach to false discovery rates. \textit{Journal of the Royal Statistical Society, Series B} 64(3).
 \end{itemize}

@@ -18,5 +18,19 @@
  "commission_placebo_2022_change": -9.274272248443023e-05,
  "commission_placebo_2022_p": 0.3335885675442032,
  "commission_upfront_change": -0.001225022697515971,
- "commission_upfront_p": 7.5986163433104936e-06
+ "commission_upfront_p": 7.5986163433104936e-06,
+ "commission_year_2013_median": 0.0056668135886179805,
+ "commission_year_2014_median": 0.0068750530289601874,
+ "commission_year_2015_median": 0.007740049042936348,
+ "commission_year_2016_median": 0.008609957306952687,
+ "commission_year_2017_median": 0.009908898039014735,
+ "commission_year_2018_median": 0.010401944558986465,
+ "commission_year_2019_median": 0.00970065104106288,
+ "commission_year_2020_median": 0.010555400335481302,
+ "commission_year_2021_median": 0.01101280510432423,
+ "commission_year_2022_median": 0.011909143226331631,
+ "commission_year_2023_median": 0.011454090924027271,
+ "commission_year_2024_median": 0.012056734460878626,
+ "commission_year_2025_median": 0.012396071745626402,
+ "commission_year_2026_median": 0.011921796832937481
 }

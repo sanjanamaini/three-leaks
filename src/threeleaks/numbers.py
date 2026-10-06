@@ -29,10 +29,11 @@ def macro_name(key: str) -> str:
 
 def is_pvalue(k: str) -> bool:
     return bool(re.search(r"(^|_)(p|pholm|p_t|p_wilcoxon|wilcoxon_p|p_worse_random|p_worse_random_within_year)$", k)) \
-        or k.endswith("_p") or "_p_" in k and k.endswith("_p")
+        or bool(re.search(r"(^|_)p(_|$)", k))  # also p_within, p_diversified, ...
 
 
 def fmt(k: str, v) -> str:
+    k = k.replace("low_r2", "lowrsq")  # the strategy's name is a label, not an R-squared
     if v is None:
         return "n/a"
     if isinstance(v, str):
