@@ -40,6 +40,17 @@ def verdict(row) -> str:
     return "Indistinguishable from luck"
 
 
+ACRONYMS = {"SBI", "HDFC", "ICICI", "UTI", "DSP", "IDFC", "LIC", "ITI", "PGIM", "HSBC", "JM", "PPFAS", "IDBI", "BOI", "NJ",
+            "ESG", "MNC", "PSU", "ELSS", "BSE", "IT", "FMCG", "US", "II", "III", "IV", "SIP", "AMC"}
+
+
+def display_name(name: str) -> str:
+    """AMFI mixes 'SBI CONTRA FUND' and 'Kotak Contra Fund'; title-case the all-capitals ones, keeping acronyms."""
+    if not name.isupper():
+        return name
+    return " ".join(w if w.strip("()-,.&") in ACRONYMS else w.capitalize() for w in name.split())
+
+
 def build() -> pd.DataFrame:
     schemes = pd.read_parquet(INTERIM / "schemes.parquet")
     twins = pd.read_parquet(INTERIM / "twins.parquet")
@@ -55,7 +66,7 @@ def build() -> pd.DataFrame:
     t = t.merge(gap[["commission"]], left_on="fund_id", right_index=True, how="left")
     t = t.merge(sk[["code", "alpha_ann", "t_nw", "q_value", "alpha_eb", "prob_pos", "r2", "n"]], left_on="direct_code", right_on="code", how="left")
     names = schemes.set_index("code")
-    t["fund"] = t["fund_id"].str.split(" | ").str[-1]
+    t["fund"] = t["fund_id"].str.split(" | ", regex=False).str[-1].map(display_name)  # literal split: a multi-character pattern is a regex by default
     t["amc"] = t["direct_code"].map(names["master_amc"]).fillna(t["direct_code"].map(names["amc"]))
     t["verdict"] = t.apply(verdict, axis=1)
     t["alternative"] = t["category"].map(ALTERNATIVE).fillna("Nifty 500 or Nifty 50 index fund")

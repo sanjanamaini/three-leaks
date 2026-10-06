@@ -12,6 +12,7 @@ timing is worse than the same flows placed in random months (PREREGISTRATION.md,
 from __future__ import annotations
 
 import json
+import re
 
 import matplotlib
 matplotlib.use("Agg")
@@ -170,7 +171,8 @@ def main() -> None:
                "timing_avg_aum_cr": main_res["avg_aum_cr"], "timing_total_inflow_cr": main_res["total_net_inflow_cr"],
                "timing_nav_corr": corr, "timing_nav_maxdiff": maxdiff}
     for _, rrow in res.iloc[1:].iterrows():
-        k = "timing_cat_" + rrow["label"].split()[0].lower().replace("&", "")
+        # Full-label slug: "Large Cap Fund" and "Large & Mid Cap Fund" must not share a key.
+        k = "timing_cat_" + re.sub(r"[^a-z]+", "_", rrow["label"].lower().replace(" fund", "")).strip("_")
         numbers[k + "_gap"] = rrow["gap_ann"]
         numbers[k + "_p"] = rrow["p_worse_than_random"]
     (TABLES / "timing_numbers.json").write_text(json.dumps(numbers, indent=1, default=float))

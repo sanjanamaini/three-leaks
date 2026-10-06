@@ -37,6 +37,12 @@ def fmt(k: str, v) -> str:
         return "n/a"
     if isinstance(v, str):
         return v
+    if isinstance(v, int) and not isinstance(v, bool):
+        return "{:,}".format(v)  # counts stay counts (never percents)
+    if re.search(r"(^|_)rho(_|$)", k):
+        return "%.2f" % v  # correlations
+    if "mse" in k:
+        return "%.4f" % v
     if is_pvalue(k) or k.endswith("pholm"):
         return "<0.001" if v < 0.001 else ("%.3f" % v)
     if k.endswith("_t") or k.endswith("_t_nw") or k.endswith("_tstat") or re.search(r"_t$|_t_|_vsall_t$", k):
@@ -58,6 +64,11 @@ def main() -> None:
     merged = {}
     for p in sorted(TABLES.glob("*_numbers.json")):
         merged.update(json.loads(p.read_text()))
+    dq = TABLES / "data_quality.csv"
+    if dq.exists():  # panel counts (schemes, returns, twins, months) written by threeleaks.panels
+        for line in dq.read_text().splitlines()[1:]:
+            name, value = line.split(",")
+            merged["dq_" + name] = int(float(value))
     (RESULTS / "numbers.json").write_text(json.dumps(merged, indent=1, sort_keys=True, default=float))
     lines = ["% Written by threeleaks.numbers from results/numbers.json. Do not edit by hand."]
     for k in sorted(merged):

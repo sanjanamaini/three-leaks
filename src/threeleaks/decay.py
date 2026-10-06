@@ -121,6 +121,48 @@ def main() -> None:
     numbers.update({"decay_gap_alpha_rho_diversified": float(rho_all), "decay_gap_alpha_p_diversified": float(p_all),
                     "decay_gap_alpha_rho_within": float(rho_w), "decay_gap_alpha_p_within": float(p_w),
                     "decay_gap_alpha_n": int(len(both))})
+    # 5. Added after results (DEVIATIONS.md): which years carry the direct plans' alpha? Betas come from
+    # the whole direct window; each calendar year's abnormal return is its mean (alpha + residual) x 12.
+    y, f = ew_excess(schemes, returns, factors, "direct")
+    ff = f.reindex(y.index)
+    ok = y.notna() & ff["mkt_rf"].notna()
+    full = fit(y[ok].to_numpy(), design(ff[ok]), NW_LAGS)
+    abnormal = pd.Series(full["resid"] + full["alpha"], index=y[ok].index)
+    years = abnormal.groupby(abnormal.index.year).agg(["count", "mean"])
+    years["abnormal_ann"] = years["mean"] * 12
+    years.to_csv(TABLES / "decay_years_direct.csv")
+    for yr, row in years.iterrows():
+        numbers["decay_year_%d_dir" % yr] = float(row["abnormal_ann"])
+    ex2020 = alpha_of(y[ok][y[ok].index.year != 2020], f)
+    allm = alpha_of(y[ok], f)
+    numbers.update({"decay_dir_alpha_full": allm["alpha_ann"], "decay_dir_alpha_full_t": allm["t_nw"],
+                    "decay_dir_alpha_ex2020": ex2020["alpha_ann"], "decay_dir_alpha_ex2020_t": ex2020["t_nw"]})
+
+    # 6. Added after results: in 2020-2025, did funds with three or more years of direct-plan history
+    # before 2020 earn less alpha than newer funds?
+    wide, meta = fund_series(schemes, returns, "direct")
+    keep = [c for c in wide.columns if meta.loc[c, "category"] not in DIVERSIFIED_EXCLUDE]
+    pre = wide.loc[wide.index < pd.Period("2020-01", "M"), keep].notna().sum()
+    win = wide.loc[(wide.index >= pd.Period("2020-01", "M")) & (wide.index <= pd.Period(FACTOR_END, "M")), keep]
+    fm = factors.set_index("month")
+    rows = []
+    for c in keep:
+        s = win[c].dropna()
+        if len(s) < 36:
+            continue
+        a = alpha_of(s - fm["rf"].reindex(s.index), fm)
+        rows.append({"code": c, "old": bool(pre[c] >= 36), "alpha_ann": a["alpha_ann"], "months": a["months"]})
+    on = pd.DataFrame(rows)
+    on.to_csv(TABLES / "decay_old_new.csv", index=False)
+    old, new = on[on["old"]], on[~on["old"]]
+    tt = stats.ttest_ind(old["alpha_ann"], new["alpha_ann"], equal_var=False)
+    numbers.update({"decay_old_funds": int(len(old)), "decay_new_funds": int(len(new)),
+                    "decay_old_alpha": float(old["alpha_ann"].mean()), "decay_new_alpha": float(new["alpha_ann"].mean()),
+                    "decay_oldnew_p": float(tt.pvalue)})
+    print(years.to_string())
+    print({k: numbers[k] for k in ("decay_dir_alpha_full", "decay_dir_alpha_ex2020", "decay_old_alpha", "decay_new_alpha",
+                                   "decay_old_funds", "decay_new_funds", "decay_oldnew_p")})
+
     (TABLES / "decay_numbers.json").write_text(json.dumps(numbers, indent=1, default=float))
     print(per.to_string())
     print(sp.to_string())
