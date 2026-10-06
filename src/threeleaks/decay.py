@@ -159,6 +159,31 @@ def main() -> None:
     numbers.update({"decay_old_funds": int(len(old)), "decay_new_funds": int(len(new)),
                     "decay_old_alpha": float(old["alpha_ann"].mean()), "decay_new_alpha": float(new["alpha_ann"].mean()),
                     "decay_oldnew_p": float(tt.pvalue)})
+
+    # 7. Added after results: reconcile with the shrinkage check in skill.py, whose realised 2020-2025
+    # alpha needs only 24 months after 2019 where section 6 needs 36. The extra funds are older funds
+    # whose series end before three full years; compare them with the surviving older funds on the
+    # same months (2020-2021), so a difference in funds is not confused with a difference in months.
+    rows = []
+    for c in keep:
+        s = win[c].dropna()
+        if pre[c] >= 36 and 24 <= len(s) < 36:
+            a = alpha_of(s - fm["rf"].reindex(s.index), fm)
+            rows.append({"code": c, "name": meta.loc[c, "name"], "amc": meta.loc[c, "amc"],
+                         "last_month": str(s.index.max()), "months": a["months"], "alpha_ann": a["alpha_ann"]})
+    short = pd.DataFrame(rows)
+    short.to_csv(TABLES / "decay_short_history.csv", index=False)
+    first, last = pd.Period("2020-01", "M"), pd.Period("2021-12", "M")
+    old_2020_21 = []
+    for c in old["code"]:
+        s = win.loc[(win.index >= first) & (win.index <= last), c].dropna()
+        old_2020_21.append(alpha_of(s - fm["rf"].reindex(s.index), fm)["alpha_ann"])
+    numbers.update({"decay_short_funds": int(len(short)), "decay_short_alpha": float(short["alpha_ann"].mean()),
+                    "decay_short_end_first": pd.Period(short["last_month"].min(), "M").strftime("%B %Y"),
+                    "decay_short_end_last": pd.Period(short["last_month"].max(), "M").strftime("%B %Y"),
+                    "decay_oldwin_alpha": float(np.mean(old_2020_21))})
+    combined = (old["alpha_ann"].sum() + short["alpha_ann"].sum()) / (len(old) + len(short))
+    print("old + short-history funds, mean 2020-2025 alpha: %.4f (the shrinkage check's realised alpha)" % combined)
     print(years.to_string())
     print({k: numbers[k] for k in ("decay_dir_alpha_full", "decay_dir_alpha_ex2020", "decay_old_alpha", "decay_new_alpha",
                                    "decay_old_funds", "decay_new_funds", "decay_oldnew_p")})

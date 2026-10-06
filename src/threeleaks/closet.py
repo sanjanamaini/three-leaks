@@ -6,7 +6,7 @@ closet index funds?
 SEBI's circular of 2017-10-06 required large-cap funds to hold at least 80% in the 100 largest
 stocks, implemented by mid-2018. If that squeezed out active bets, large-cap funds' tracking
 error against a Nifty 50 index fund should fall after mid-2018 relative to funds whose mandate
-was not tightened as much (mid-cap funds). Difference-in-differences on tracking error, fund
+was not tied to the largest stocks (mid- and small-cap funds). Difference-in-differences on tracking error, fund
 by fund, 24 months before (2016-07 to 2018-06) vs 24 months after (2018-07 to 2020-06), with a
 second post window (2022-07 to 2024-06) to see whether it persisted.
 """

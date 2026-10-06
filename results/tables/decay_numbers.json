@@ -85,5 +85,10 @@
  "decay_new_funds": 94,
  "decay_old_alpha": 0.010843225558929404,
  "decay_new_alpha": 0.03327430614167302,
- "decay_oldnew_p": 4.860127439121696e-07
+ "decay_oldnew_p": 4.860127439121696e-07,
+ "decay_short_funds": 20,
+ "decay_short_alpha": -0.0649425782827089,
+ "decay_short_end_first": "December 2021",
+ "decay_short_end_last": "November 2022",
+ "decay_oldwin_alpha": -0.08127121834334786
 }
