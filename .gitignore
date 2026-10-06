@@ -1,0 +1,22 @@
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Data: downloaded from source by `make data`, never committed (see DATA.md)
+data/raw/
+data/interim/
+
+# Local-only working notes and the decision-flow document
+_local/
+
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.bbl
+report/*.blg
+report/*.fls
+report/*.fdb_latexmk
