@@ -29,7 +29,7 @@ make all        # download from AMFI and IIMA, build panels, run every analysis,
 make test       # unit tests
 ```
 
-The AMFI downloads are slow (about 250 monthly NAV files). After they are on disk, `make panels analysis report` rebuilds every number in about three minutes, and a rerun reproduces every number exactly. Every number in the report is written by the pipeline into `results/numbers.json` and `report/numbers.tex`.
+The AMFI downloads are slow (about 250 monthly NAV files). After they are on disk, `make panels analysis report` rebuilds every number in about three minutes, and a rerun reproduces every number exactly. Every number in the report is written by the pipeline into `results/numbers.json` and `report/numbers.tex`. `make examples` redoes each method by hand for two funds (HDFC Mid Cap and HDFC Large Cap) and checks every result against the pipeline.
 
 ## How it works
 

@@ -2,9 +2,9 @@
 PY := .venv/bin/python
 export PYTHONPATH := src
 
-.PHONY: all data panels analysis report test clean-derived
+.PHONY: all data panels analysis report examples test clean-derived
 
-all: data panels analysis report
+all: data panels analysis report examples
 
 test:
 	$(PY) -m unittest discover -s tests
@@ -32,6 +32,10 @@ report:
 	$(PY) -m threeleaks.numbers
 	$(PY) -m threeleaks.report_tables
 	cd report && pdflatex -interaction=nonstopmode -halt-on-error report.tex >/dev/null && pdflatex -interaction=nonstopmode -halt-on-error report.tex >/dev/null
+
+# Each method by hand on two real funds, checked against the pipeline (results/examples.json).
+examples:
+	$(PY) -m threeleaks.examples > /dev/null
 
 clean-derived:
 	rm -f results/tables/*.csv results/figures/*.png results/numbers.json report/numbers.tex
